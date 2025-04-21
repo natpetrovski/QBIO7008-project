@@ -192,7 +192,7 @@ substrate_prop <- RCA_long %>%
   ungroup()
 
 #Merge site and date rows, substr codes as columns
-SubPropSY <- RCA_long %>%
+RC_SubPropSY <- RCA_long %>%
   group_by(SITE, year, substrate_code) %>%
   summarise(count = n(), .groups = "drop") %>% #counts all instances of substrate code, ungroups
   group_by(SITE, year) %>% #groups again by survey
@@ -207,7 +207,7 @@ SubPropSY <- RCA_long %>%
     values_fill = 0 #fill instead of NA
   )
 
-write_csv(SubPropSY, "RC_Substrate_Proportions.csv")
+write_csv(RC_SubPropSY, "RC_Substrate_Proportions.csv")
 
 ############################################################
 #Pivot back to long format, might be easier for ggplot, retains 0 prop values
@@ -237,7 +237,7 @@ substrate_long_grouped <- substrate_long %>%
   group_by(SITE, year, substrate_group) %>%
   summarise(Proportion =sum(Proportion), .groups = "drop") ##make sure to run this part or the props dont make sense, need to sum them
 
-write.csv(substrate_long_grouped, "substrate_long_grouped.csv", row.names = FALSE)
+write.csv(RC_substrate_long_grouped, "RC_substrate_long_grouped.csv", row.names = FALSE)
 
 #see if any codes were missed
 substrate_long_grouped %>%
