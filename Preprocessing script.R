@@ -2,11 +2,9 @@
 
 library(tidyverse)
 
-setwd("~/Desktop/QBIOL/QBIO7008-ResearchProject/WorkingData")
-
 ########CORAL WATCH CLEANING#########################
 #####################################################
-coral_watch <- read_csv("coral-watch-heron-cleaned.csv")
+coral_watch <- read_csv(file = "coral-watch-heron-cleaned.csv")
 
 names(coral_watch)
 head(coral_watch)
