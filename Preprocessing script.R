@@ -98,6 +98,19 @@ CWsublong <- CWsublong %>%
 CWsublong<- CWsublong %>%
   unite(survey_id, SITE, DATE, sep = "_", remove = FALSE)
 
+CWsublong <- CWsublong %>%
+  mutate(site_type = if_else(
+  SITE %in% c("Cappuccino", "Jetty Flat", "Last Resort", "Research Zone", "Shark Bay", "White Wedding"), 
+  "RF", "RS")) %>%
+  relocate(site_type, .after = SITE)
+
+#sort by RF and RS for easy plotting
+CWsublong <- CWsublong %>%
+  mutate(SITE_label = paste0(SITE, " (", site_type, ")")) %>%
+  relocate(SITE_label, .after = site_type) %>%
+  arrange(site_type, SITE) %>%
+  mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
+
 write_csv(CWsublong, "coralwatch_sub.csv")
 
 #############REEF CHECK CLEANING#################################
@@ -205,13 +218,30 @@ RC_SubPropSY <- RCA_long %>%
     values_fill = 0 #fill instead of NA
   )
 
+
+##add reef flat and slope to sites
+RC_SubPropSy %>% count(SITE)
+
+RC_SubPropSY <- RC_SubPropSY %>%
+  mutate(site_type = if_else(
+    SITE %in% c("Cappuccino", "Jetty Flat", "Last Resort", "Research Zone", "Shark Bay", "White Wedding"), 
+    "RF", "RS")) %>%
+  relocate(site_type, .after = SITE)
+
+#sort by RF and RS for easy plotting
+RC_SubPropSY <- RC_SubPropSY %>%
+  mutate(SITE_label = paste0(SITE, " (", site_type, ")")) %>%
+  relocate(SITE_label, .after = site_type) %>%
+  arrange(site_type, SITE) %>%
+  mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
+
 write_csv(RC_SubPropSY, "RC_Substrate_Proportions.csv")
 
 ############################################################
 #Pivot back to long format, might be easier for ggplot, retains 0 prop values
-substrate_long <- SubPropSY %>%
+substrate_long <- RC_SubPropSY %>%
   pivot_longer(
-    cols = -c(SITE, year),
+    cols = -c(SITE, year, site_type, SITE_label),
     names_to = "Substrate",
     values_to = "Proportion"
   )
@@ -220,7 +250,7 @@ substrate_long <- SubPropSY %>%
 
 unique(substrate_long$Substrate)
 
-substrate_long_grouped <- substrate_long %>%
+RC_substrate_long_grouped <- substrate_long %>%
   mutate(substrate_group = case_when(
     Substrate %in% c("HC", "HCBR", "HCE", "HCP", "HCM", "HCF") ~ "HC",
     Substrate == "HCB" ~ "HCB",
@@ -232,8 +262,13 @@ substrate_long_grouped <- substrate_long %>%
     Substrate == "NIA" ~ "NIA",
     Substrate == "NR" ~ "NR",
     TRUE ~ "Unknown")) %>%
-  group_by(SITE, year, substrate_group) %>%
+  group_by(SITE, site_type, SITE_label, year, substrate_group) %>%
   summarise(Proportion =sum(Proportion), .groups = "drop") ##make sure to run this part or the props dont make sense, need to sum them
+
+#arrange to group RF and RS. dont run if dont want grouped
+RC_substrate_long_grouped <- RC_substrate_long_grouped%>%
+  arrange(site_type, SITE) %>%
+  mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
 
 write.csv(RC_substrate_long_grouped, "RC_substrate_long_grouped.csv", row.names = FALSE)
 

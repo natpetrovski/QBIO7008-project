@@ -6,29 +6,6 @@ library(tidyverse)
 RC_SubPropSY <- read_csv(file = "RC_Substrate_Proportions.csv")
 RC_substrate_long_grouped <- read_csv(file = "RC_substrate_long_grouped.csv")
 
-###example barplot with substrate proportions (don't like axis)
-ggplot(RC_substrate_long_grouped, aes(x = year, y = Proportion, fill = substrate_group)) +
-  geom_col() +
-  facet_wrap(~ SITE) +
-  scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
-  labs(y = "Proportion",
-       x = "Year"
-  ) +
-  theme_minimal()
-
-###example barplot with HC vs HCB proportions only
-RC_substrate_long_grouped %>%
-  filter(substrate_group %in% c("HCB", "HC")) %>%
-  ggplot(aes(x = year, y = Proportion, fill = substrate_group)) +
-  geom_col(position = "stack") +
-  facet_wrap(~ SITE) +
-  scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
-  labs(y = "Proportion",
-       x = "Year")  +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
-
-##############################################################
 #Custom colors for substrate groups
 substrate_colours <- c(
   "HC" = "darkorange",
@@ -46,30 +23,60 @@ substrate_colours_2 <- c(
 
 #####################################################
 
+###barplot with substrate proportions
+p6 <- ggplot(RC_substrate_long_grouped, aes(x = factor(year), y = Proportion, fill = substrate_group)) +
+  geom_col() +
+  facet_wrap(~ SITE_label) +
+  scale_fill_manual(values = substrate_colours) +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+  labs(y = "Proportion",
+       x = "Year"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggsave("RCA_substr_prop_site.jpeg", p6, width = 11, height = 7, dpi = 300)
+
+###example barplot with HC vs HCB proportions only
+p7 <- RC_substrate_long_grouped %>%
+  filter(substrate_group %in% c("HCB", "HC")) %>%
+  ggplot(aes(x = factor(year), y = Proportion, fill = substrate_group)) +
+  geom_col(position = "stack") +
+  facet_wrap(~ SITE_label) +
+  scale_fill_manual(values = substrate_colours_2) +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+  labs(y = "Proportion",
+       x = "Year")  +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+ggsave("RCA_HC_prop_site.jpeg", p7, width = 11, height = 7, dpi = 300)
+
+##############################################################
+
 ###line plot to show trend of substrate proportions over year? need to clean if used
 ggplot(RC_substrate_long_grouped, aes(x = factor(year), y = Proportion, color = substrate_group)) +
   geom_line(linewidth = 1.2) +
   geom_point(size = 1.5) +
-  facet_wrap(~ SITE, scales = "free_y") +
+  facet_wrap(~ SITE_label, scales = "free_y") +
   scale_color_manual(values = substrate_colours) +
-  labs(
-    title = "Substrate Proportions Over Time",
-    x = "Year", y = "Proportion", color = "Substrate Group"
+  labs(x = "Year", y = "Proportion", color = "Substrate Group"
   ) +
   theme_minimal(base_size = 14) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 
 ####line plot showing proportion of HCB per site and year
-RC_substrate_long_grouped %>%
+distinct_colours <- c("blue", "darkgreen", "gold", "mediumpurple", "pink1", "orangered2", "orange", "snow4",
+                      "sienna", "olivedrab2", "khaki", "turquoise", "maroon")
+
+p8 <- RC_substrate_long_grouped %>%
   filter(substrate_group == "HCB") %>%
-  ggplot(aes(x = factor(year), y = Proportion, color = SITE, group = SITE)) +
+  ggplot(aes(x = factor(year), y = Proportion, color = SITE_label, group = SITE)) +
   geom_line(linewidth = 1.2) +
   geom_point(size = 2) +
-  labs(
-    title = "Bleached Hard Coral Proportions over Time",
-    x = "Year", y = "Proportion", color = "Site"
+  labs(x = "Year", y = "Proportion", color = "Site"
   ) +
+  scale_color_manual(values = distinct_colours) +
   scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
   theme_minimal(base_size = 14) +
   theme(
@@ -79,13 +86,15 @@ RC_substrate_long_grouped %>%
     panel.spacing = unit(1, "lines")
   )
 
+ggsave("RCA_HCBonly_prop_site_year.jpeg", p8, width = 11, height = 7, dpi = 300)
+
 #####################################################
 ###plot barplot of substrate proportions by site as individual plots and merge
 library(cowplot)
 library(patchwork)
 
 ##Get unique sites
-site_list <- unique(RC_substrate_long_grouped$SITE)
+site_list <- unique(RC_substrate_long_grouped$SITE_label)
 
 ##create labels
 labels <- site_list
@@ -93,7 +102,7 @@ labels <- site_list
 ##Loop over each group and make a separate plot
 plots <- map2(site_list,labels, function(site, label) {
   p <- RC_substrate_long_grouped %>%
-    filter(SITE == site) %>%
+    filter(SITE_label == site) %>%
     ggplot(aes(x = factor(year), y = Proportion, fill = substrate_group)) +
     geom_col() +
     scale_fill_manual(values = substrate_colours, name = "Substrate") +
@@ -133,7 +142,7 @@ blanklabelplot<-ggplot()+labs(y="Proportion", x = "Year") + theme_classic()+
 finalplot <- (blanklabelplot|combined_patchwork) + 
   plot_layout(widths = c(1,1000), heights = c(1,0.1))
 
-print(finalplot)
+ print(finalplot)
 
 ggsave("RCSubstProps.jpg", plot = finalplot, width = 14, height = 20, dpi = 300)
 
@@ -147,7 +156,7 @@ filtered <- RC_substrate_long_grouped %>%
 ##Loop over each group and make a separate plot
 plotsfilter <- map2(site_list,labels, function(site, label) {
   pfilt <- filtered %>%
-    filter(SITE == site) %>%
+    filter(SITE_label == site) %>%
     ggplot(aes(x = factor(year), y = Proportion, fill = substrate_group)) +
     geom_col(position = "dodge") +
     scale_fill_manual(values = substrate_colours_2, name = "Substrate") +
@@ -195,7 +204,7 @@ ggsave("RC_HCvHCBProps.jpg", plot = finalplotfilter, width = 14, height = 20, dp
 
 #mean and stdev of substrate proportions by site. any use???
 substrate_summary <- RC_substrate_long_grouped %>%
-  group_by(SITE, substrate_group) %>%
+  group_by(SITE_label, substrate_group) %>%
   summarise(
     mean_prop = mean(Proportion),
     sd_prop = sd(Proportion),
@@ -205,7 +214,7 @@ substrate_summary <- RC_substrate_long_grouped %>%
 #HC and HCB prop over sites and years to see increase/decrease
 HCtrend <- RC_substrate_long_grouped %>%
   filter(substrate_group %in% c("HC", "HCB")) %>%
-  group_by(SITE, year, substrate_group) %>%
+  group_by(SITE_label, year, substrate_group) %>%
   summarise(total = sum(Proportion), .groups = "drop")
 
 ###see if HC and HCB prop changes respectively i.e. is there a relationship between them
@@ -215,13 +224,16 @@ HCtrend_wide <- RC_substrate_long_grouped %>%
   pivot_wider(names_from = substrate_group, values_from = Proportion)
 
 #look at proporton of HC and HCB trend over time, plot will need fixing, messy axis
-ggplot(HCtrend_wide, aes(x = year)) +
+p9 <- ggplot(HCtrend_wide, aes(x = year)) +
   geom_line(aes(y = HC, color = "Healthy")) +
   geom_line(aes(y = HCB, color = "Bleached")) +
-  facet_wrap(~ SITE) +
+  facet_wrap(~ SITE_label) +
+  scale_color_manual(values = c("Healthy" = "darkorange", "Bleached" = "orangered")) +
   labs(y = "Proportion Cover", color = "Hard Coral") +
-  theme_minimal()
-
+  theme_minimal() +
+  scale_x_continuous(breaks = seq(2013, 2024, by = 1)) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
+ggsave("RCA_HCvHCB_site_year.jpeg", p9, width = 12, height = 9, dpi = 300)
 
 ##############looking at relationship between HC and HCB - only for showing trends as data is not independent
 ####not sure if this is somethign valuable to look at??????????
@@ -290,9 +302,7 @@ hard_coral_b$predicted <- predict(m_beta_simple, type = "response")
 ggplot(hard_coral_b, aes(x = year, y = Proportion_adj, color = SITE)) +
   geom_point(alpha = 0.4) +
   geom_line(aes(y = predicted), color = "black", linewidth = 1.2) +
-  labs(
-    title = "Predicted Bleaching Proportion Over Time",
-    y = "Adjusted Bleached Proportion",
+  labs(y = "Adjusted Bleached Proportion",
     x = "Year"
   ) +
   theme_minimal()
@@ -301,9 +311,7 @@ ggplot(hard_coral_b, aes(x = year, y = Proportion_adj, color = SITE)) +
 ggplot(hard_coral_b, aes(x = year, y = predicted, color = SITE)) +
   geom_line(size = 1) +
   geom_point(aes(y = Proportion_adj), alpha = 0.5) +  # add actual observed values
-  labs(
-    title = "Predicted Bleaching Over Time by Site",
-    x = "Year",
+  labs(x = "Year",
     y = "Predicted Proportion Bleached",
     color = "Site"
   ) +
@@ -314,7 +322,7 @@ ggplot(hard_coral_b, aes(x = year, y = predicted, color = SITE)) +
 #calculate prop bleached (HCB/HC) to match CW props
 RC_bleach <- RC_substrate_long_grouped %>%
   filter(substrate_group %in% c("HC", "HCB")) %>%
-  group_by(SITE, year) %>%
+  group_by(SITE_label, year) %>%
   mutate(total_coral = sum(Proportion)) %>%
   filter(substrate_group == "HCB") %>%
   mutate(prop_bleached = Proportion / total_coral)
