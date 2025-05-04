@@ -1,11 +1,12 @@
 #####CoralWatch visualisations and statistics###
 library(ggplot2)
 library(tidyverse)
+library(here)
 
 ##########CORAL WATCH###########################
 ##read correct file in
-CWsub <- read_csv(file = "coralwatch_sub.csv")
-CWsub <- read_csv(file = "coralwatch_sub_plus_autumn.csv") 
+CWsub <- read_csv(here("coralwatch_sub.csv"))
+CWsub <- read_csv(here("coralwatch_sub_plus_autumn.csv"))
 
 ######proportion of colour scores per site and year
 CWsub <- CWsub %>%
@@ -71,7 +72,7 @@ CW_bleach_detect_year <- CW_bleach_detect_year %>%
   arrange(site_type, SITE) %>%
   mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
 
-write_csv(CW_bleach_detect_year, "CW_bleach_detect_year.csv")
+write_csv(CW_bleach_detect_year, file = here::here("output_data", "CW_bleach_detect_year.csv"))
 
 ###plot (above) bleaching by year (sites combined)
 p2 <- CW_bleach_detect_year %>%

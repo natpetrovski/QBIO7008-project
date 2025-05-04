@@ -1,10 +1,10 @@
 ##Cleaning and pre-processing CoralWatch and RCA data script
 
 library(tidyverse)
-
+library(here)
 ########CORAL WATCH CLEANING#########################
 #####################################################
-coral_watch <- read_csv(file = "coral-watch-heron-cleaned.csv")
+coral_watch <- read_csv(here("coral-watch-heron-cleaned.csv"))
 
 names(coral_watch)
 head(coral_watch)
@@ -126,14 +126,14 @@ CWsublong <- CWsublong %>%
   arrange(site_type, SITE) %>%
   mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
 
-write_csv(CWsublong, "coralwatch_sub.csv")
+write_csv(CWsublong, file = here::here("output_data", "coralwatch_sub.csv"))
 ##2024 autumn version
-write_csv(CWsublong, "coralwatch_sub_plus_autumn.csv")
+write_csv(CWsublong, file = here::here("output_data", "coralwatch_sub_plus_autumn.csv"))
 
 #############REEF CHECK CLEANING#################################
 #################################################################
 
-RC_S <- read_csv("RC_Substrate_cleaned.csv")
+RC_S <- read_csv(here("RC_Substrate_cleaned.csv"))
 
 str(RC_S)
 glimpse(RC_S)
@@ -252,7 +252,7 @@ RC_SubPropSY <- RC_SubPropSY %>%
   arrange(site_type, SITE) %>%
   mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
 
-write_csv(RC_SubPropSY, "RC_Substrate_Proportions.csv")
+write_csv(RC_SubPropSY, file = here::here("output_data","RC_Substrate_Proportions.csv"))
 
 ############################################################
 #Pivot back to long format, might be easier for ggplot, retains 0 prop values
@@ -287,7 +287,7 @@ RC_substrate_long_grouped <- RC_substrate_long_grouped%>%
   arrange(site_type, SITE) %>%
   mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
 
-write.csv(RC_substrate_long_grouped, "RC_substrate_long_grouped.csv", row.names = FALSE)
+write.csv(RC_substrate_long_grouped, file = here:here("output_data", "RC_substrate_long_grouped.csv"), row.names = FALSE)
 
 #see if any codes were missed
 substrate_long_grouped %>%
@@ -300,6 +300,3 @@ numNR <- substrate_long_grouped %>%
 unique(numNR$Proportion)
 
 ###############################################################
-##read in RCA GPS data
-library(foreign)
-RCAsites <- read.dbf("ReefCheckAUS_HeronData.dbf")

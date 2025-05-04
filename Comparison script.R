@@ -1,10 +1,10 @@
 #####Comparsion visualisations and statistics###
 library(ggplot2)
 library(tidyverse)
+library(here)
 
-RC_bleach <- read_csv(file = "RC_bleach.csv")
-CW_bleach_detect_year <- read_csv(file = "CW_bleach_detect_year.csv")
-
+RC_bleach <- read_csv(here("RC_bleach.csv"))
+CW_bleach_detect_year <- read_csv(here("CW_bleach_detect_year.csv"))
 
 ##merge CW and RC data into one table
 bleach_comparison <- RC_bleach %>%
@@ -51,7 +51,7 @@ p10 <- ggplot(bleach_comparison_long, aes(x = factor(year), y = bleach_prop, col
   ) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
-ggsave("RCA_CW_bleaching_comparison.jpeg", p10, width = 13, height = 9, dpi = 300)
+ggsave(path = "figs", filename = "RCA_CW_bleaching_comparison.jpeg", p10, width = 13, height = 9, dpi = 300)
 
 #barplot
 p11 <- ggplot(bleach_comparison_long, aes(x = factor(year), y = bleach_prop, fill = method)) +
@@ -61,7 +61,7 @@ p11 <- ggplot(bleach_comparison_long, aes(x = factor(year), y = bleach_prop, fil
   labs(x = "Year", y = "Bleaching Proportion", fill = "CS program") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
-ggsave("RCA_CW_bleaching_comparison_barplot.jpeg", p11, width = 13, height = 9, dpi = 300)
+ggsave(path = "figs", filename = "RCA_CW_bleaching_comparison_barplot.jpeg", p11, width = 13, height = 9, dpi = 300)
 
 
 #scatterplot

@@ -1,10 +1,10 @@
 #####RCA visualisations and statistics###
 library(ggplot2)
 library(tidyverse)
-
+library(here)
 ##########Reef Check Australia###########################
-RC_SubPropSY <- read_csv(file = "RC_Substrate_Proportions.csv")
-RC_substrate_long_grouped <- read_csv(file = "RC_substrate_long_grouped.csv")
+RC_SubPropSY <- read_csv(here("RC_Substrate_Proportions.csv"))
+RC_substrate_long_grouped <- read_csv(here("RC_substrate_long_grouped.csv"))
 
 #Custom colors for substrate groups
 substrate_colours <- c(
@@ -331,7 +331,7 @@ RC_bleach <- RC_substrate_long_grouped %>%
   arrange(site_type, SITE) %>%
   mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
 
-write_csv(RC_bleach, "RC_bleach.csv")
+write_csv(RC_bleach, file = here::here("output_data", "RC_bleach.csv"))
 
 
 ###Plot prop bleached - proportion of bleached corals/total coral (not all substrate)
