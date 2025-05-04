@@ -57,7 +57,11 @@ CWsub <- CWsub %>%
 CWsub %>%
   count(SITE)
 
-#select month range
+#filter years
+CWsub <- CWsub %>%
+  filter(year(DATE) >= 2013)
+
+#select month range 
 CWsub <- CWsub %>%
   filter(month(DATE) >= 9 & month(DATE) <= 11)
 
@@ -66,9 +70,20 @@ CWsub %>%
   mutate(month = month(DATE)) %>%
   distinct(month)
 
-#now filter years
-CWsub <- CWsub %>%
-  filter(year(DATE) >= 2013)
+####OR select month range including autumn 2024
+CWsub2 <- CWsub %>%
+  filter(
+  (month(DATE) >= 9 & month(DATE) <= 11) |
+  (year(DATE) == 2024 & month(DATE) %in% c(3:5)))
+
+#check filtering worked
+work_months <- CWsub2 %>%
+  mutate(year = year(DATE),
+    month_num = month(DATE),
+    month = month(DATE, label = TRUE)) %>%
+  distinct(year, month) %>%
+  arrange(year, month) %>%
+  select(year, month)
 
 #create a column just for year
 CWsub <- CWsub %>%
@@ -112,6 +127,8 @@ CWsublong <- CWsublong %>%
   mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
 
 write_csv(CWsublong, "coralwatch_sub.csv")
+##2024 autumn version
+write_csv(CWsublong, "coralwatch_sub_plus_autumn.csv")
 
 #############REEF CHECK CLEANING#################################
 #################################################################

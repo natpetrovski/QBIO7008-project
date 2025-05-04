@@ -34,7 +34,7 @@ p6 <- ggplot(RC_substrate_long_grouped, aes(x = factor(year), y = Proportion, fi
   ) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
-ggsave("RCA_substr_prop_site.jpeg", p6, width = 11, height = 7, dpi = 300)
+ggsave(path = "figs", filename = "RCA_substr_prop_site.jpeg", p6, width = 11, height = 7, dpi = 300)
 
 ###example barplot with HC vs HCB proportions only
 p7 <- RC_substrate_long_grouped %>%
@@ -49,7 +49,7 @@ p7 <- RC_substrate_long_grouped %>%
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-ggsave("RCA_HC_prop_site.jpeg", p7, width = 11, height = 7, dpi = 300)
+ggsave(path = "figs", filename = "RCA_HC_prop_site.jpeg", p7, width = 11, height = 7, dpi = 300)
 
 ##############################################################
 
@@ -86,7 +86,7 @@ p8 <- RC_substrate_long_grouped %>%
     panel.spacing = unit(1, "lines")
   )
 
-ggsave("RCA_HCBonly_prop_site_year.jpeg", p8, width = 11, height = 7, dpi = 300)
+ggsave(path = "figs", filename = "RCA_HCBonly_prop_site_year.jpeg", p8, width = 11, height = 7, dpi = 300)
 
 #####################################################
 ###plot barplot of substrate proportions by site as individual plots and merge
@@ -144,7 +144,7 @@ finalplot <- (blanklabelplot|combined_patchwork) +
 
  print(finalplot)
 
-ggsave("RCSubstProps.jpg", plot = finalplot, width = 14, height = 20, dpi = 300)
+ggsave(path = "figs", filename = "RCSubstProps.jpg", plot = finalplot, width = 14, height = 20, dpi = 300)
 
 #####################################################
 ###try above but with HC vs HCB only
@@ -196,7 +196,7 @@ finalplotfilter <- (blanklabelplot|combined_patchwork_filt) +
 
 print(finalplotfilter)
 
-ggsave("RC_HCvHCBProps.jpg", plot = finalplotfilter, width = 14, height = 20, dpi = 300)
+ggsave(path = "figs", filename = "RC_HCvHCBProps.jpg", plot = finalplotfilter, width = 14, height = 20, dpi = 300)
 
 
 ###############################################################################
@@ -223,7 +223,7 @@ HCtrend_wide <- RC_substrate_long_grouped %>%
   filter(substrate_group %in% c("HC", "HCB")) %>%
   pivot_wider(names_from = substrate_group, values_from = Proportion)
 
-#look at proporton of HC and HCB trend over time, plot will need fixing, messy axis
+#look at proporton of HC and HCB trend over time
 p9 <- ggplot(HCtrend_wide, aes(x = year)) +
   geom_line(aes(y = HC, color = "Healthy")) +
   geom_line(aes(y = HCB, color = "Bleached")) +
@@ -233,7 +233,8 @@ p9 <- ggplot(HCtrend_wide, aes(x = year)) +
   theme_minimal() +
   scale_x_continuous(breaks = seq(2013, 2024, by = 1)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
-ggsave("RCA_HCvHCB_site_year.jpeg", p9, width = 12, height = 9, dpi = 300)
+ggsave(path = "figs", filename = "RCA_HCvHCB_site_year.jpeg", p9, width = 12, height = 9, dpi = 300)
+
 
 ##############looking at relationship between HC and HCB - only for showing trends as data is not independent
 ####not sure if this is somethign valuable to look at??????????
@@ -319,12 +320,72 @@ ggplot(hard_coral_b, aes(x = year, y = predicted, color = SITE)) +
 
 ########################################################################
 #######################################################################
-#calculate prop bleached (HCB/HC) to match CW props
+#calculate prop bleached (HCB) to match CW props
 RC_bleach <- RC_substrate_long_grouped %>%
   filter(substrate_group %in% c("HC", "HCB")) %>%
   group_by(SITE_label, year) %>%
   mutate(total_coral = sum(Proportion)) %>%
   filter(substrate_group == "HCB") %>%
-  mutate(prop_bleached = Proportion / total_coral)
+  mutate(prop_bleached = Proportion / total_coral) %>%
+  ungroup() %>%
+  arrange(site_type, SITE) %>%
+  mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
 
 write_csv(RC_bleach, "RC_bleach.csv")
+
+
+###Plot prop bleached - proportion of bleached corals/total coral (not all substrate)
+p12 <- ggplot(RC_bleach, aes(x = year, y = prop_bleached)) +
+  geom_line(color = "orangered") +
+  geom_point(color = "orangered") +
+  facet_wrap(~ SITE_label) +
+  labs(x = "Year",
+       y = "Proportion Bleached (of Total Hard Coral)") +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+  scale_x_continuous(breaks = seq(2013, 2024, by = 1)) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.position = "none")
+ggsave(path = "figs", filename = "RCA_bleaching_proportion_by_site.jpeg", p12, width = 12, height = 7, dpi = 300)
+
+
+#######as above but retain HC proportions
+RC_HC_bleach<- RC_substrate_long_grouped %>%
+  filter(substrate_group %in% c("HC", "HCB")) %>%
+  group_by(SITE_label, year) %>%
+  mutate(total_coral = sum(Proportion)) %>%
+  mutate(prop_bleached = Proportion / total_coral) %>%
+  ungroup() %>%
+  arrange(site_type, SITE) %>%
+  mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
+
+###barplot of HC proportions (excluding all other substrate proportions)
+RC_HC_bleach %>%
+  ggplot(aes(x = factor(year), y = prop_bleached, fill = substrate_group)) +
+  geom_col(position = "stack") +
+  facet_wrap(~ SITE_label) +
+  scale_fill_manual(values = substrate_colours_2) +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+  labs(y = "Proportion",
+       x = "Year")  +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+####same as p9 but different style with point
+ggplot(RC_HC_bleach, aes(x = year, y = Proportion, color = substrate_group)) +
+  geom_line() +
+  geom_point() +
+  facet_wrap(~ SITE_label) +
+  labs(x = "Year", y = "Proportion", color = "Substrate Type") +
+  scale_color_manual(
+    values = c("HC" = "darkorange",   # blue for healthy coral
+               "HCB" = "orangered")  # red for bleached coral
+  ) +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+  theme_minimal() +
+  scale_x_continuous(breaks = seq(2013, 2024, by = 1)) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.position = "bottom")
+
