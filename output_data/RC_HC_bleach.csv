@@ -1,152 +1,303 @@
 SITE,site_type,SITE_label,year,substrate_group,Proportion,total_coral,prop_bleached
+Cappuccino,NF,Cappuccino (NF),2013,HC,0.188,0.194,NA
 Cappuccino,NF,Cappuccino (NF),2013,HCB,0.006,0.194,0.030927835051546393
+Cappuccino,NF,Cappuccino (NF),2014,HC,0.237,0.27499999999999997,NA
 Cappuccino,NF,Cappuccino (NF),2014,HCB,0.038,0.27499999999999997,0.13818181818181818
+Cappuccino,NF,Cappuccino (NF),2015,HC,0.288,0.294,NA
 Cappuccino,NF,Cappuccino (NF),2015,HCB,0.006,0.294,0.020408163265306124
+Cappuccino,NF,Cappuccino (NF),2016,HC,0.244,0.313,NA
 Cappuccino,NF,Cappuccino (NF),2016,HCB,0.069,0.313,0.22044728434504793
+Cappuccino,NF,Cappuccino (NF),2017,HC,0.157,0.17,NA
 Cappuccino,NF,Cappuccino (NF),2017,HCB,0.013,0.17,0.07647058823529411
+Cappuccino,NF,Cappuccino (NF),2018,HC,0.269,0.29400000000000004,NA
 Cappuccino,NF,Cappuccino (NF),2018,HCB,0.025,0.29400000000000004,0.08503401360544217
+Cappuccino,NF,Cappuccino (NF),2019,HC,0.214,0.22,NA
 Cappuccino,NF,Cappuccino (NF),2019,HCB,0.006,0.22,0.027272727272727275
+Cappuccino,NF,Cappuccino (NF),2020,HC,0.182,0.188,NA
 Cappuccino,NF,Cappuccino (NF),2020,HCB,0.006,0.188,0.031914893617021274
+Cappuccino,NF,Cappuccino (NF),2021,HC,0.151,0.151,NA
 Cappuccino,NF,Cappuccino (NF),2021,HCB,0,0.151,0
+Cappuccino,NF,Cappuccino (NF),2022,HC,0.156,0.162,NA
 Cappuccino,NF,Cappuccino (NF),2022,HCB,0.006,0.162,0.037037037037037035
+Cappuccino,NF,Cappuccino (NF),2023,HC,0.357,0.357,NA
 Cappuccino,NF,Cappuccino (NF),2023,HCB,0,0.357,0
+Cappuccino,NF,Cappuccino (NF),2024,HC,0.238,0.244,NA
 Cappuccino,NF,Cappuccino (NF),2024,HCB,0.006,0.244,0.02459016393442623
+Last Resort,NF,Last Resort (NF),2013,HC,0.095,0.095,NA
 Last Resort,NF,Last Resort (NF),2013,HCB,0,0.095,0
+Last Resort,NF,Last Resort (NF),2014,HC,0.044,0.044,NA
 Last Resort,NF,Last Resort (NF),2014,HCB,0,0.044,0
+Last Resort,NF,Last Resort (NF),2015,HC,0.075,0.075,NA
 Last Resort,NF,Last Resort (NF),2015,HCB,0,0.075,0
+Last Resort,NF,Last Resort (NF),2016,HC,0.206,0.212,NA
 Last Resort,NF,Last Resort (NF),2016,HCB,0.006,0.212,0.02830188679245283
+Last Resort,NF,Last Resort (NF),2017,HC,0.019,0.038,NA
 Last Resort,NF,Last Resort (NF),2017,HCB,0.019,0.038,0.5
+Last Resort,NF,Last Resort (NF),2018,HC,0.075,0.11299999999999999,NA
 Last Resort,NF,Last Resort (NF),2018,HCB,0.038,0.11299999999999999,0.336283185840708
+Last Resort,NF,Last Resort (NF),2019,HC,0.063,0.069,NA
 Last Resort,NF,Last Resort (NF),2019,HCB,0.006,0.069,0.08695652173913043
+Last Resort,NF,Last Resort (NF),2020,HC,0.032,0.032,NA
 Last Resort,NF,Last Resort (NF),2020,HCB,0,0.032,0
+Last Resort,NF,Last Resort (NF),2021,HC,0.056,0.056,NA
 Last Resort,NF,Last Resort (NF),2021,HCB,0,0.056,0
+Last Resort,NF,Last Resort (NF),2022,HC,0.038,0.038,NA
 Last Resort,NF,Last Resort (NF),2022,HCB,0,0.038,0
+Last Resort,NF,Last Resort (NF),2023,HC,0.1,0.10600000000000001,NA
 Last Resort,NF,Last Resort (NF),2023,HCB,0.006,0.10600000000000001,0.056603773584905655
+Last Resort,NF,Last Resort (NF),2024,HC,0.044,0.044,NA
 Last Resort,NF,Last Resort (NF),2024,HCB,0,0.044,0
+White Wedding,NF,White Wedding (NF),2014,HC,0.1,0.1,NA
 White Wedding,NF,White Wedding (NF),2014,HCB,0,0.1,0
+White Wedding,NF,White Wedding (NF),2015,HC,0.131,0.137,NA
 White Wedding,NF,White Wedding (NF),2015,HCB,0.006,0.137,0.0437956204379562
+White Wedding,NF,White Wedding (NF),2016,HC,0.069,0.069,NA
 White Wedding,NF,White Wedding (NF),2016,HCB,0,0.069,0
+White Wedding,NF,White Wedding (NF),2017,HC,0.126,0.139,NA
 White Wedding,NF,White Wedding (NF),2017,HCB,0.013,0.139,0.0935251798561151
+White Wedding,NF,White Wedding (NF),2018,HC,0.107,0.107,NA
 White Wedding,NF,White Wedding (NF),2018,HCB,0,0.107,0
+White Wedding,NF,White Wedding (NF),2019,HC,0.032,0.038,NA
 White Wedding,NF,White Wedding (NF),2019,HCB,0.006,0.038,0.15789473684210528
+White Wedding,NF,White Wedding (NF),2020,HC,0.068,0.068,NA
 White Wedding,NF,White Wedding (NF),2020,HCB,0,0.068,0
+White Wedding,NF,White Wedding (NF),2021,HC,0.088,0.088,NA
 White Wedding,NF,White Wedding (NF),2021,HCB,0,0.088,0
+White Wedding,NF,White Wedding (NF),2022,HC,0.074,0.074,NA
 White Wedding,NF,White Wedding (NF),2022,HCB,0,0.074,0
+White Wedding,NF,White Wedding (NF),2023,HC,0.119,0.119,NA
 White Wedding,NF,White Wedding (NF),2023,HCB,0,0.119,0
+White Wedding,NF,White Wedding (NF),2024,HC,0.063,0.076,NA
 White Wedding,NF,White Wedding (NF),2024,HCB,0.013,0.076,0.17105263157894737
+Jetty Flat,SF,Jetty Flat (SF),2013,HC,0.351,0.351,NA
 Jetty Flat,SF,Jetty Flat (SF),2013,HCB,0,0.351,0
+Jetty Flat,SF,Jetty Flat (SF),2014,HC,0.312,0.325,NA
 Jetty Flat,SF,Jetty Flat (SF),2014,HCB,0.013,0.325,0.039999999999999994
+Jetty Flat,SF,Jetty Flat (SF),2015,HC,0.35,0.356,NA
 Jetty Flat,SF,Jetty Flat (SF),2015,HCB,0.006,0.356,0.016853932584269662
+Jetty Flat,SF,Jetty Flat (SF),2016,HC,0.437,0.46799999999999997,NA
 Jetty Flat,SF,Jetty Flat (SF),2016,HCB,0.031,0.46799999999999997,0.06623931623931624
+Jetty Flat,SF,Jetty Flat (SF),2017,HC,0.313,0.313,NA
 Jetty Flat,SF,Jetty Flat (SF),2017,HCB,0,0.313,0
+Jetty Flat,SF,Jetty Flat (SF),2018,HC,0.293,0.306,NA
 Jetty Flat,SF,Jetty Flat (SF),2018,HCB,0.013,0.306,0.042483660130718956
+Jetty Flat,SF,Jetty Flat (SF),2019,HC,0.238,0.238,NA
 Jetty Flat,SF,Jetty Flat (SF),2019,HCB,0,0.238,0
+Jetty Flat,SF,Jetty Flat (SF),2020,HC,0.306,0.312,NA
 Jetty Flat,SF,Jetty Flat (SF),2020,HCB,0.006,0.312,0.019230769230769232
+Jetty Flat,SF,Jetty Flat (SF),2021,HC,0.355,0.355,NA
 Jetty Flat,SF,Jetty Flat (SF),2021,HCB,0,0.355,0
+Jetty Flat,SF,Jetty Flat (SF),2022,HC,0.287,0.287,NA
 Jetty Flat,SF,Jetty Flat (SF),2022,HCB,0,0.287,0
+Jetty Flat,SF,Jetty Flat (SF),2023,HC,0.431,0.431,NA
 Jetty Flat,SF,Jetty Flat (SF),2023,HCB,0,0.431,0
+Jetty Flat,SF,Jetty Flat (SF),2024,HC,0.244,0.244,NA
 Jetty Flat,SF,Jetty Flat (SF),2024,HCB,0,0.244,0
+Research Zone,SF,Research Zone (SF),2013,HC,0.056,0.056,NA
 Research Zone,SF,Research Zone (SF),2013,HCB,0,0.056,0
+Research Zone,SF,Research Zone (SF),2014,HC,0.088,0.088,NA
 Research Zone,SF,Research Zone (SF),2014,HCB,0,0.088,0
+Research Zone,SF,Research Zone (SF),2015,HC,0.094,0.094,NA
 Research Zone,SF,Research Zone (SF),2015,HCB,0,0.094,0
+Research Zone,SF,Research Zone (SF),2016,HC,0.069,0.069,NA
 Research Zone,SF,Research Zone (SF),2016,HCB,0,0.069,0
+Research Zone,SF,Research Zone (SF),2017,HC,0.087,0.087,NA
 Research Zone,SF,Research Zone (SF),2017,HCB,0,0.087,0
+Research Zone,SF,Research Zone (SF),2018,HC,0.068,0.068,NA
 Research Zone,SF,Research Zone (SF),2018,HCB,0,0.068,0
+Research Zone,SF,Research Zone (SF),2019,HC,0.193,0.199,NA
 Research Zone,SF,Research Zone (SF),2019,HCB,0.006,0.199,0.03015075376884422
+Research Zone,SF,Research Zone (SF),2020,HC,0.087,0.087,NA
 Research Zone,SF,Research Zone (SF),2020,HCB,0,0.087,0
+Research Zone,SF,Research Zone (SF),2021,HC,0.076,0.076,NA
 Research Zone,SF,Research Zone (SF),2021,HCB,0,0.076,0
+Research Zone,SF,Research Zone (SF),2022,HC,0.107,0.107,NA
 Research Zone,SF,Research Zone (SF),2022,HCB,0,0.107,0
+Research Zone,SF,Research Zone (SF),2023,HC,0.099,0.099,NA
 Research Zone,SF,Research Zone (SF),2023,HCB,0,0.099,0
+Research Zone,SF,Research Zone (SF),2024,HC,0.131,0.137,NA
 Research Zone,SF,Research Zone (SF),2024,HCB,0.006,0.137,0.0437956204379562
+Shark Bay,SF,Shark Bay (SF),2013,HC,0.137,0.17500000000000002,NA
 Shark Bay,SF,Shark Bay (SF),2013,HCB,0.038,0.17500000000000002,0.2171428571428571
+Shark Bay,SF,Shark Bay (SF),2014,HC,0.062,0.062,NA
 Shark Bay,SF,Shark Bay (SF),2014,HCB,0,0.062,0
+Shark Bay,SF,Shark Bay (SF),2015,HC,0.087,0.087,NA
 Shark Bay,SF,Shark Bay (SF),2015,HCB,0,0.087,0
+Shark Bay,SF,Shark Bay (SF),2016,HC,0.069,0.069,NA
 Shark Bay,SF,Shark Bay (SF),2016,HCB,0,0.069,0
+Shark Bay,SF,Shark Bay (SF),2017,HC,0.1,0.15000000000000002,NA
 Shark Bay,SF,Shark Bay (SF),2017,HCB,0.05,0.15000000000000002,0.3333333333333333
+Shark Bay,SF,Shark Bay (SF),2018,HC,0.156,0.169,NA
 Shark Bay,SF,Shark Bay (SF),2018,HCB,0.013,0.169,0.07692307692307691
+Shark Bay,SF,Shark Bay (SF),2019,HC,0.093,0.093,NA
 Shark Bay,SF,Shark Bay (SF),2019,HCB,0,0.093,0
+Shark Bay,SF,Shark Bay (SF),2020,HC,0.107,0.107,NA
 Shark Bay,SF,Shark Bay (SF),2020,HCB,0,0.107,0
+Shark Bay,SF,Shark Bay (SF),2021,HC,0.075,0.075,NA
 Shark Bay,SF,Shark Bay (SF),2021,HCB,0,0.075,0
+Shark Bay,SF,Shark Bay (SF),2022,HC,0.114,0.12000000000000001,NA
 Shark Bay,SF,Shark Bay (SF),2022,HCB,0.006,0.12000000000000001,0.049999999999999996
+Shark Bay,SF,Shark Bay (SF),2023,HC,0.188,0.188,NA
 Shark Bay,SF,Shark Bay (SF),2023,HCB,0,0.188,0
+Shark Bay,SF,Shark Bay (SF),2024,HC,0.169,0.17500000000000002,NA
 Shark Bay,SF,Shark Bay (SF),2024,HCB,0.006,0.17500000000000002,0.03428571428571428
+Coral Cascade,NS,Coral Cascade (NS),2013,HC,0.432,0.432,NA
 Coral Cascade,NS,Coral Cascade (NS),2013,HCB,0,0.432,0
+Coral Cascade,NS,Coral Cascade (NS),2014,HC,0.494,0.494,NA
 Coral Cascade,NS,Coral Cascade (NS),2014,HCB,0,0.494,0
+Coral Cascade,NS,Coral Cascade (NS),2015,HC,0.568,0.568,NA
 Coral Cascade,NS,Coral Cascade (NS),2015,HCB,0,0.568,0
+Coral Cascade,NS,Coral Cascade (NS),2016,HC,0.605,0.624,NA
 Coral Cascade,NS,Coral Cascade (NS),2016,HCB,0.019,0.624,0.030448717948717948
+Coral Cascade,NS,Coral Cascade (NS),2017,HC,0.45,0.55,NA
 Coral Cascade,NS,Coral Cascade (NS),2017,HCB,0.1,0.55,0.18181818181818182
+Coral Cascade,NS,Coral Cascade (NS),2018,HC,0.531,0.544,NA
 Coral Cascade,NS,Coral Cascade (NS),2018,HCB,0.013,0.544,0.02389705882352941
+Coral Cascade,NS,Coral Cascade (NS),2019,HC,0.532,0.545,NA
 Coral Cascade,NS,Coral Cascade (NS),2019,HCB,0.013,0.545,0.02385321100917431
+Coral Cascade,NS,Coral Cascade (NS),2020,HC,0.601,0.601,NA
 Coral Cascade,NS,Coral Cascade (NS),2020,HCB,0,0.601,0
+Coral Cascade,NS,Coral Cascade (NS),2021,HC,0.668,0.668,NA
 Coral Cascade,NS,Coral Cascade (NS),2021,HCB,0,0.668,0
+Coral Cascade,NS,Coral Cascade (NS),2022,HC,0.557,0.5630000000000001,NA
 Coral Cascade,NS,Coral Cascade (NS),2022,HCB,0.006,0.5630000000000001,0.010657193605683835
+Coral Cascade,NS,Coral Cascade (NS),2023,HC,0.794,0.794,NA
 Coral Cascade,NS,Coral Cascade (NS),2023,HCB,0,0.794,0
+Coral Cascade,NS,Coral Cascade (NS),2024,HC,0.294,0.294,NA
 Coral Cascade,NS,Coral Cascade (NS),2024,HCB,0,0.294,0
+Coral Grotto,NS,Coral Grotto (NS),2013,HC,0.288,0.288,NA
 Coral Grotto,NS,Coral Grotto (NS),2013,HCB,0,0.288,0
+Coral Grotto,NS,Coral Grotto (NS),2014,HC,0.339,0.339,NA
 Coral Grotto,NS,Coral Grotto (NS),2014,HCB,0,0.339,0
+Coral Grotto,NS,Coral Grotto (NS),2015,HC,0.433,0.433,NA
 Coral Grotto,NS,Coral Grotto (NS),2015,HCB,0,0.433,0
+Coral Grotto,NS,Coral Grotto (NS),2016,HC,0.6,0.6,NA
 Coral Grotto,NS,Coral Grotto (NS),2016,HCB,0,0.6,0
+Coral Grotto,NS,Coral Grotto (NS),2017,HC,0.47,0.47,NA
 Coral Grotto,NS,Coral Grotto (NS),2017,HCB,0,0.47,0
+Coral Grotto,NS,Coral Grotto (NS),2018,HC,0.594,0.594,NA
 Coral Grotto,NS,Coral Grotto (NS),2018,HCB,0,0.594,0
+Coral Grotto,NS,Coral Grotto (NS),2020,HC,0.606,0.606,NA
 Coral Grotto,NS,Coral Grotto (NS),2020,HCB,0,0.606,0
+Coral Grotto,NS,Coral Grotto (NS),2021,HC,0.689,0.689,NA
 Coral Grotto,NS,Coral Grotto (NS),2021,HCB,0,0.689,0
+Coral Grotto,NS,Coral Grotto (NS),2022,HC,0.67,0.67,NA
 Coral Grotto,NS,Coral Grotto (NS),2022,HCB,0,0.67,0
+Coral Grotto,NS,Coral Grotto (NS),2023,HC,0.619,0.619,NA
 Coral Grotto,NS,Coral Grotto (NS),2023,HCB,0,0.619,0
+Coral Grotto,NS,Coral Grotto (NS),2024,HC,0.263,0.269,NA
 Coral Grotto,NS,Coral Grotto (NS),2024,HCB,0.006,0.269,0.022304832713754646
+Libby's Lair,NS,Libby's Lair (NS),2013,HC,0.475,0.488,NA
 Libby's Lair,NS,Libby's Lair (NS),2013,HCB,0.013,0.488,0.02663934426229508
+Libby's Lair,NS,Libby's Lair (NS),2014,HC,0.51,0.523,NA
 Libby's Lair,NS,Libby's Lair (NS),2014,HCB,0.013,0.523,0.024856596558317397
+Libby's Lair,NS,Libby's Lair (NS),2015,HC,0.519,0.525,NA
 Libby's Lair,NS,Libby's Lair (NS),2015,HCB,0.006,0.525,0.011428571428571429
+Libby's Lair,NS,Libby's Lair (NS),2016,HC,0.6,0.613,NA
 Libby's Lair,NS,Libby's Lair (NS),2016,HCB,0.013,0.613,0.021207177814029362
+Libby's Lair,NS,Libby's Lair (NS),2017,HC,0.558,0.646,NA
 Libby's Lair,NS,Libby's Lair (NS),2017,HCB,0.088,0.646,0.13622291021671826
+Libby's Lair,NS,Libby's Lair (NS),2018,HC,0.626,0.632,NA
 Libby's Lair,NS,Libby's Lair (NS),2018,HCB,0.006,0.632,0.00949367088607595
+Libby's Lair,NS,Libby's Lair (NS),2019,HC,0.737,0.775,NA
 Libby's Lair,NS,Libby's Lair (NS),2019,HCB,0.038,0.775,0.049032258064516124
+Libby's Lair,NS,Libby's Lair (NS),2020,HC,0.72,0.72,NA
 Libby's Lair,NS,Libby's Lair (NS),2020,HCB,0,0.72,0
+Libby's Lair,NS,Libby's Lair (NS),2021,HC,0.756,0.756,NA
 Libby's Lair,NS,Libby's Lair (NS),2021,HCB,0,0.756,0
+Libby's Lair,NS,Libby's Lair (NS),2022,HC,0.694,0.694,NA
 Libby's Lair,NS,Libby's Lair (NS),2022,HCB,0,0.694,0
+Libby's Lair,NS,Libby's Lair (NS),2023,HC,0.744,0.744,NA
 Libby's Lair,NS,Libby's Lair (NS),2023,HCB,0,0.744,0
+Libby's Lair,NS,Libby's Lair (NS),2024,HC,0.249,0.249,NA
 Libby's Lair,NS,Libby's Lair (NS),2024,HCB,0,0.249,0
+Canyons,SS,Canyons (SS),2013,HC,0.693,0.699,NA
 Canyons,SS,Canyons (SS),2013,HCB,0.006,0.699,0.008583690987124463
+Canyons,SS,Canyons (SS),2014,HC,0.626,0.626,NA
 Canyons,SS,Canyons (SS),2014,HCB,0,0.626,0
+Canyons,SS,Canyons (SS),2015,HC,0.631,0.631,NA
 Canyons,SS,Canyons (SS),2015,HCB,0,0.631,0
+Canyons,SS,Canyons (SS),2016,HC,0.793,0.8310000000000001,NA
 Canyons,SS,Canyons (SS),2016,HCB,0.038,0.8310000000000001,0.045728038507821894
+Canyons,SS,Canyons (SS),2017,HC,0.606,0.606,NA
 Canyons,SS,Canyons (SS),2017,HCB,0,0.606,0
+Canyons,SS,Canyons (SS),2018,HC,0.676,0.6890000000000001,NA
 Canyons,SS,Canyons (SS),2018,HCB,0.013,0.6890000000000001,0.018867924528301886
+Canyons,SS,Canyons (SS),2019,HC,0.676,0.676,NA
 Canyons,SS,Canyons (SS),2019,HCB,0,0.676,0
+Canyons,SS,Canyons (SS),2020,HC,0.763,0.763,NA
 Canyons,SS,Canyons (SS),2020,HCB,0,0.763,0
+Canyons,SS,Canyons (SS),2021,HC,0.73,0.73,NA
 Canyons,SS,Canyons (SS),2021,HCB,0,0.73,0
+Canyons,SS,Canyons (SS),2022,HC,0.719,0.719,NA
 Canyons,SS,Canyons (SS),2022,HCB,0,0.719,0
+Canyons,SS,Canyons (SS),2023,HC,0.625,0.638,NA
 Canyons,SS,Canyons (SS),2023,HCB,0.013,0.638,0.02037617554858934
+Canyons,SS,Canyons (SS),2024,HC,0.506,0.519,NA
 Canyons,SS,Canyons (SS),2024,HCB,0.013,0.519,0.025048169556840076
+Half Way,SS,Half Way (SS),2014,HC,0.312,0.325,NA
 Half Way,SS,Half Way (SS),2014,HCB,0.013,0.325,0.039999999999999994
+Half Way,SS,Half Way (SS),2015,HC,0.306,0.306,NA
 Half Way,SS,Half Way (SS),2015,HCB,0,0.306,0
+Half Way,SS,Half Way (SS),2016,HC,0.168,0.18100000000000002,NA
 Half Way,SS,Half Way (SS),2016,HCB,0.013,0.18100000000000002,0.07182320441988949
+Half Way,SS,Half Way (SS),2017,HC,0.182,0.20099999999999998,NA
 Half Way,SS,Half Way (SS),2017,HCB,0.019,0.20099999999999998,0.0945273631840796
+Half Way,SS,Half Way (SS),2020,HC,0.263,0.263,NA
 Half Way,SS,Half Way (SS),2020,HCB,0,0.263,0
+Half Way,SS,Half Way (SS),2021,HC,0.3,0.3,NA
 Half Way,SS,Half Way (SS),2021,HCB,0,0.3,0
+Half Way,SS,Half Way (SS),2022,HC,0.243,0.243,NA
 Half Way,SS,Half Way (SS),2022,HCB,0,0.243,0
+Half Way,SS,Half Way (SS),2023,HC,0.463,0.463,NA
 Half Way,SS,Half Way (SS),2023,HCB,0,0.463,0
+Half Way,SS,Half Way (SS),2024,HC,0.162,0.162,NA
 Half Way,SS,Half Way (SS),2024,HCB,0,0.162,0
+Harry's Bommie,SS,Harry's Bommie (SS),2013,HC,0.633,0.633,NA
 Harry's Bommie,SS,Harry's Bommie (SS),2013,HCB,0,0.633,0
+Harry's Bommie,SS,Harry's Bommie (SS),2014,HC,0.731,0.737,NA
 Harry's Bommie,SS,Harry's Bommie (SS),2014,HCB,0.006,0.737,0.00814111261872456
+Harry's Bommie,SS,Harry's Bommie (SS),2015,HC,0.613,0.626,NA
 Harry's Bommie,SS,Harry's Bommie (SS),2015,HCB,0.013,0.626,0.020766773162939296
+Harry's Bommie,SS,Harry's Bommie (SS),2016,HC,0.838,0.863,NA
 Harry's Bommie,SS,Harry's Bommie (SS),2016,HCB,0.025,0.863,0.028968713789107765
+Harry's Bommie,SS,Harry's Bommie (SS),2017,HC,0.526,0.545,NA
 Harry's Bommie,SS,Harry's Bommie (SS),2017,HCB,0.019,0.545,0.03486238532110091
+Harry's Bommie,SS,Harry's Bommie (SS),2018,HC,0.733,0.752,NA
 Harry's Bommie,SS,Harry's Bommie (SS),2018,HCB,0.019,0.752,0.02526595744680851
+Harry's Bommie,SS,Harry's Bommie (SS),2019,HC,0.657,0.6880000000000001,NA
 Harry's Bommie,SS,Harry's Bommie (SS),2019,HCB,0.031,0.6880000000000001,0.04505813953488372
+Harry's Bommie,SS,Harry's Bommie (SS),2020,HC,0.651,0.657,NA
 Harry's Bommie,SS,Harry's Bommie (SS),2020,HCB,0.006,0.657,0.0091324200913242
+Harry's Bommie,SS,Harry's Bommie (SS),2021,HC,0.631,0.631,NA
 Harry's Bommie,SS,Harry's Bommie (SS),2021,HCB,0,0.631,0
+Harry's Bommie,SS,Harry's Bommie (SS),2022,HC,0.744,0.744,NA
 Harry's Bommie,SS,Harry's Bommie (SS),2022,HCB,0,0.744,0
+Harry's Bommie,SS,Harry's Bommie (SS),2023,HC,0.675,0.681,NA
 Harry's Bommie,SS,Harry's Bommie (SS),2023,HCB,0.006,0.681,0.008810572687224669
+Harry's Bommie,SS,Harry's Bommie (SS),2024,HC,0.106,0.368,NA
 Harry's Bommie,SS,Harry's Bommie (SS),2024,HCB,0.262,0.368,0.7119565217391305
+Heron Bommie,SS,Heron Bommie (SS),2013,HC,0.599,0.661,NA
 Heron Bommie,SS,Heron Bommie (SS),2013,HCB,0.062,0.661,0.09379727685325265
+Heron Bommie,SS,Heron Bommie (SS),2014,HC,0.714,0.764,NA
 Heron Bommie,SS,Heron Bommie (SS),2014,HCB,0.05,0.764,0.06544502617801047
+Heron Bommie,SS,Heron Bommie (SS),2015,HC,0.643,0.737,NA
 Heron Bommie,SS,Heron Bommie (SS),2015,HCB,0.094,0.737,0.12754409769335143
+Heron Bommie,SS,Heron Bommie (SS),2016,HC,0.463,0.46900000000000003,NA
 Heron Bommie,SS,Heron Bommie (SS),2016,HCB,0.006,0.46900000000000003,0.01279317697228145
+Heron Bommie,SS,Heron Bommie (SS),2017,HC,0.531,0.537,NA
 Heron Bommie,SS,Heron Bommie (SS),2017,HCB,0.006,0.537,0.0111731843575419
+Heron Bommie,SS,Heron Bommie (SS),2018,HC,0.663,0.663,NA
 Heron Bommie,SS,Heron Bommie (SS),2018,HCB,0,0.663,0
+Heron Bommie,SS,Heron Bommie (SS),2019,HC,0.432,0.432,NA
 Heron Bommie,SS,Heron Bommie (SS),2019,HCB,0,0.432,0
+Heron Bommie,SS,Heron Bommie (SS),2020,HC,0.606,0.606,NA
 Heron Bommie,SS,Heron Bommie (SS),2020,HCB,0,0.606,0
+Heron Bommie,SS,Heron Bommie (SS),2021,HC,0.469,0.469,NA
 Heron Bommie,SS,Heron Bommie (SS),2021,HCB,0,0.469,0
+Heron Bommie,SS,Heron Bommie (SS),2022,HC,0.55,0.5630000000000001,NA
 Heron Bommie,SS,Heron Bommie (SS),2022,HCB,0.013,0.5630000000000001,0.02309058614564831
+Heron Bommie,SS,Heron Bommie (SS),2023,HC,0.718,0.718,NA
 Heron Bommie,SS,Heron Bommie (SS),2023,HCB,0,0.718,0
+Heron Bommie,SS,Heron Bommie (SS),2024,HC,0.32,0.32,NA
 Heron Bommie,SS,Heron Bommie (SS),2024,HCB,0,0.32,0

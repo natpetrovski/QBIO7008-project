@@ -1,0 +1,166 @@
+survey_id,SITE,site_type,SITE_label,DATE,year,observations,n_bleach,prop_bleach,bleached
+Canyons_2013-11-05,Canyons,SS,Canyons (SS),2013-11-05,2013,36,2,0.05555555555555555,FALSE
+Canyons_2014-11-07,Canyons,SS,Canyons (SS),2014-11-07,2014,38,10,0.2631578947368421,TRUE
+Canyons_2015-11-23,Canyons,SS,Canyons (SS),2015-11-23,2015,40,0,0,FALSE
+Canyons_2016-09-17,Canyons,SS,Canyons (SS),2016-09-17,2016,38,1,0.02631578947368421,FALSE
+Canyons_2017-10-28,Canyons,SS,Canyons (SS),2017-10-28,2017,42,0,0,FALSE
+Canyons_2017-11-03,Canyons,SS,Canyons (SS),2017-11-03,2017,44,4,0.09090909090909091,FALSE
+Canyons_2018-11-13,Canyons,SS,Canyons (SS),2018-11-13,2018,40,0,0,FALSE
+Canyons_2019-10-25,Canyons,SS,Canyons (SS),2019-10-25,2019,40,0,0,FALSE
+Canyons_2020-09-18,Canyons,SS,Canyons (SS),2020-09-18,2020,12,0,0,FALSE
+Canyons_2020-09-19,Canyons,SS,Canyons (SS),2020-09-19,2020,334,15,0.04491017964071856,FALSE
+Canyons_2021-10-13,Canyons,SS,Canyons (SS),2021-10-13,2021,208,5,0.02403846153846154,FALSE
+Canyons_2021-11-05,Canyons,SS,Canyons (SS),2021-11-05,2021,40,0,0,FALSE
+Canyons_2022-11-05,Canyons,SS,Canyons (SS),2022-11-05,2022,36,0,0,FALSE
+Canyons_2022-11-06,Canyons,SS,Canyons (SS),2022-11-06,2022,74,1,0.013513513513513514,FALSE
+Canyons_2023-09-30,Canyons,SS,Canyons (SS),2023-09-30,2023,36,0,0,FALSE
+Canyons_2023-10-30,Canyons,SS,Canyons (SS),2023-10-30,2023,76,1,0.013157894736842105,FALSE
+Canyons_2024-10-25,Canyons,SS,Canyons (SS),2024-10-25,2024,42,1,0.023809523809523808,FALSE
+Canyons_2024-11-01,Canyons,SS,Canyons (SS),2024-11-01,2024,78,1,0.01282051282051282,FALSE
+Cappuccino_2013-11-05,Cappuccino,NF,Cappuccino (NF),2013-11-05,2013,40,0,0,FALSE
+Cappuccino_2014-11-11,Cappuccino,NF,Cappuccino (NF),2014-11-11,2014,80,9,0.1125,FALSE
+Cappuccino_2015-11-24,Cappuccino,NF,Cappuccino (NF),2015-11-24,2015,40,4,0.1,FALSE
+Cappuccino_2016-09-19,Cappuccino,NF,Cappuccino (NF),2016-09-19,2016,80,3,0.0375,FALSE
+Cappuccino_2017-11-01,Cappuccino,NF,Cappuccino (NF),2017-11-01,2017,40,1,0.025,FALSE
+Cappuccino_2018-09-25,Cappuccino,NF,Cappuccino (NF),2018-09-25,2018,40,0,0,FALSE
+Cappuccino_2018-11-11,Cappuccino,NF,Cappuccino (NF),2018-11-11,2018,40,3,0.075,FALSE
+Cappuccino_2020-11-18,Cappuccino,NF,Cappuccino (NF),2020-11-18,2020,40,4,0.1,FALSE
+Cappuccino_2021-11-04,Cappuccino,NF,Cappuccino (NF),2021-11-04,2021,38,0,0,FALSE
+Cappuccino_2022-11-08,Cappuccino,NF,Cappuccino (NF),2022-11-08,2022,38,0,0,FALSE
+Cappuccino_2023-09-30,Cappuccino,NF,Cappuccino (NF),2023-09-30,2023,120,8,0.06666666666666667,FALSE
+Cappuccino_2024-10-30,Cappuccino,NF,Cappuccino (NF),2024-10-30,2024,114,7,0.06140350877192982,FALSE
+Coral Cascade_2014-11-08,Coral Cascade,NS,Coral Cascade (NS),2014-11-08,2014,40,0,0,FALSE
+Coral Cascade_2015-11-24,Coral Cascade,NS,Coral Cascade (NS),2015-11-24,2015,36,0,0,FALSE
+Coral Cascade_2017-10-29,Coral Cascade,NS,Coral Cascade (NS),2017-10-29,2017,44,1,0.022727272727272728,FALSE
+Coral Cascade_2018-11-10,Coral Cascade,NS,Coral Cascade (NS),2018-11-10,2018,36,0,0,FALSE
+Coral Cascade_2021-10-08,Coral Cascade,NS,Coral Cascade (NS),2021-10-08,2021,42,1,0.023809523809523808,FALSE
+Coral Cascade_2021-11-06,Coral Cascade,NS,Coral Cascade (NS),2021-11-06,2021,108,0,0,FALSE
+Coral Cascade_2022-11-04,Coral Cascade,NS,Coral Cascade (NS),2022-11-04,2022,40,0,0,FALSE
+Coral Cascade_2023-10-01,Coral Cascade,NS,Coral Cascade (NS),2023-10-01,2023,36,0,0,FALSE
+Coral Cascade_2023-11-01,Coral Cascade,NS,Coral Cascade (NS),2023-11-01,2023,76,1,0.013157894736842105,FALSE
+Coral Cascade_2024-10-27,Coral Cascade,NS,Coral Cascade (NS),2024-10-27,2024,40,2,0.05,FALSE
+Coral Cascade_2024-11-02,Coral Cascade,NS,Coral Cascade (NS),2024-11-02,2024,40,1,0.025,FALSE
+Coral Grotto_2014-11-09,Coral Grotto,NS,Coral Grotto (NS),2014-11-09,2014,38,3,0.07894736842105263,FALSE
+Coral Grotto_2015-11-27,Coral Grotto,NS,Coral Grotto (NS),2015-11-27,2015,38,1,0.02631578947368421,FALSE
+Coral Grotto_2017-10-30,Coral Grotto,NS,Coral Grotto (NS),2017-10-30,2017,32,0,0,FALSE
+Coral Grotto_2017-11-01,Coral Grotto,NS,Coral Grotto (NS),2017-11-01,2017,44,0,0,FALSE
+Coral Grotto_2018-11-11,Coral Grotto,NS,Coral Grotto (NS),2018-11-11,2018,40,0,0,FALSE
+Coral Grotto_2019-10-26,Coral Grotto,NS,Coral Grotto (NS),2019-10-26,2019,36,0,0,FALSE
+Coral Grotto_2021-11-07,Coral Grotto,NS,Coral Grotto (NS),2021-11-07,2021,36,0,0,FALSE
+Coral Grotto_2022-11-04,Coral Grotto,NS,Coral Grotto (NS),2022-11-04,2022,94,8,0.0851063829787234,FALSE
+Coral Grotto_2023-10-04,Coral Grotto,NS,Coral Grotto (NS),2023-10-04,2023,32,2,0.0625,FALSE
+Coral Grotto_2023-10-27,Coral Grotto,NS,Coral Grotto (NS),2023-10-27,2023,36,0,0,FALSE
+Coral Grotto_2024-10-29,Coral Grotto,NS,Coral Grotto (NS),2024-10-29,2024,50,4,0.08,FALSE
+Coral Grotto_2024-11-04,Coral Grotto,NS,Coral Grotto (NS),2024-11-04,2024,62,3,0.04838709677419355,FALSE
+Half Way_2015-11-27,Half Way,SS,Half Way (SS),2015-11-27,2015,34,0,0,FALSE
+Half Way_2016-09-21,Half Way,SS,Half Way (SS),2016-09-21,2016,30,0,0,FALSE
+Half Way_2017-11-01,Half Way,SS,Half Way (SS),2017-11-01,2017,32,0,0,FALSE
+Half Way_2018-11-13,Half Way,SS,Half Way (SS),2018-11-13,2018,28,0,0,FALSE
+Half Way_2019-10-25,Half Way,SS,Half Way (SS),2019-10-25,2019,72,1,0.013888888888888888,FALSE
+Half Way_2021-11-10,Half Way,SS,Half Way (SS),2021-11-10,2021,38,0,0,FALSE
+Half Way_2022-11-06,Half Way,SS,Half Way (SS),2022-11-06,2022,38,0,0,FALSE
+Half Way_2022-11-08,Half Way,SS,Half Way (SS),2022-11-08,2022,40,0,0,FALSE
+Half Way_2023-10-02,Half Way,SS,Half Way (SS),2023-10-02,2023,34,1,0.029411764705882353,FALSE
+Half Way_2023-10-30,Half Way,SS,Half Way (SS),2023-10-30,2023,36,0,0,FALSE
+Half Way_2024-10-26,Half Way,SS,Half Way (SS),2024-10-26,2024,100,6,0.06,FALSE
+Half Way_2024-11-01,Half Way,SS,Half Way (SS),2024-11-01,2024,32,0,0,FALSE
+Harry's Bommie_2014-11-07,Harry's Bommie,SS,Harry's Bommie (SS),2014-11-07,2014,30,0,0,FALSE
+Harry's Bommie_2015-11-23,Harry's Bommie,SS,Harry's Bommie (SS),2015-11-23,2015,34,3,0.08823529411764706,FALSE
+Harry's Bommie_2016-09-17,Harry's Bommie,SS,Harry's Bommie (SS),2016-09-17,2016,40,0,0,FALSE
+Harry's Bommie_2017-10-28,Harry's Bommie,SS,Harry's Bommie (SS),2017-10-28,2017,38,0,0,FALSE
+Harry's Bommie_2018-11-13,Harry's Bommie,SS,Harry's Bommie (SS),2018-11-13,2018,36,3,0.08333333333333333,FALSE
+Harry's Bommie_2019-10-25,Harry's Bommie,SS,Harry's Bommie (SS),2019-10-25,2019,40,1,0.025,FALSE
+Harry's Bommie_2021-11-05,Harry's Bommie,SS,Harry's Bommie (SS),2021-11-05,2021,34,0,0,FALSE
+Harry's Bommie_2022-11-06,Harry's Bommie,SS,Harry's Bommie (SS),2022-11-06,2022,60,0,0,FALSE
+Harry's Bommie_2023-09-30,Harry's Bommie,SS,Harry's Bommie (SS),2023-09-30,2023,34,0,0,FALSE
+Harry's Bommie_2023-10-30,Harry's Bommie,SS,Harry's Bommie (SS),2023-10-30,2023,78,1,0.01282051282051282,FALSE
+Harry's Bommie_2024-10-25,Harry's Bommie,SS,Harry's Bommie (SS),2024-10-25,2024,106,6,0.05660377358490566,FALSE
+Harry's Bommie_2024-11-01,Harry's Bommie,SS,Harry's Bommie (SS),2024-11-01,2024,72,0,0,FALSE
+Harry's Bommie_2024-11-03,Harry's Bommie,SS,Harry's Bommie (SS),2024-11-03,2024,38,2,0.05263157894736842,FALSE
+Heron Bommie_2014-11-10,Heron Bommie,SS,Heron Bommie (SS),2014-11-10,2014,34,1,0.029411764705882353,FALSE
+Heron Bommie_2016-09-19,Heron Bommie,SS,Heron Bommie (SS),2016-09-19,2016,38,0,0,FALSE
+Heron Bommie_2017-11-02,Heron Bommie,SS,Heron Bommie (SS),2017-11-02,2017,36,1,0.027777777777777776,FALSE
+Heron Bommie_2018-11-12,Heron Bommie,SS,Heron Bommie (SS),2018-11-12,2018,30,5,0.16666666666666666,FALSE
+Heron Bommie_2019-10-29,Heron Bommie,SS,Heron Bommie (SS),2019-10-29,2019,36,0,0,FALSE
+Heron Bommie_2022-11-05,Heron Bommie,SS,Heron Bommie (SS),2022-11-05,2022,64,1,0.015625,FALSE
+Heron Bommie_2022-11-06,Heron Bommie,SS,Heron Bommie (SS),2022-11-06,2022,42,4,0.09523809523809523,FALSE
+Heron Bommie_2023-10-03,Heron Bommie,SS,Heron Bommie (SS),2023-10-03,2023,30,1,0.03333333333333333,FALSE
+Heron Bommie_2023-10-31,Heron Bommie,SS,Heron Bommie (SS),2023-10-31,2023,36,1,0.027777777777777776,FALSE
+Heron Bommie_2024-10-28,Heron Bommie,SS,Heron Bommie (SS),2024-10-28,2024,36,7,0.19444444444444445,FALSE
+Heron Bommie_2024-11-05,Heron Bommie,SS,Heron Bommie (SS),2024-11-05,2024,78,0,0,FALSE
+Jetty Flat_2014-11-10,Jetty Flat,SF,Jetty Flat (SF),2014-11-10,2014,70,4,0.05714285714285714,FALSE
+Jetty Flat_2015-11-26,Jetty Flat,SF,Jetty Flat (SF),2015-11-26,2015,40,3,0.075,FALSE
+Jetty Flat_2016-09-20,Jetty Flat,SF,Jetty Flat (SF),2016-09-20,2016,38,6,0.15789473684210525,FALSE
+Jetty Flat_2017-11-30,Jetty Flat,SF,Jetty Flat (SF),2017-11-30,2017,40,8,0.2,TRUE
+Jetty Flat_2021-11-06,Jetty Flat,SF,Jetty Flat (SF),2021-11-06,2021,30,1,0.03333333333333333,FALSE
+Jetty Flat_2022-11-28,Jetty Flat,SF,Jetty Flat (SF),2022-11-28,2022,34,0,0,FALSE
+Jetty Flat_2023-09-29,Jetty Flat,SF,Jetty Flat (SF),2023-09-29,2023,36,0,0,FALSE
+Jetty Flat_2024-10-25,Jetty Flat,SF,Jetty Flat (SF),2024-10-25,2024,110,2,0.01818181818181818,FALSE
+Last Resort_2014-11-09,Last Resort,NF,Last Resort (NF),2014-11-09,2014,80,5,0.0625,FALSE
+Last Resort_2016-09-20,Last Resort,NF,Last Resort (NF),2016-09-20,2016,24,1,0.041666666666666664,FALSE
+Last Resort_2023-10-03,Last Resort,NF,Last Resort (NF),2023-10-03,2023,80,0,0,FALSE
+Last Resort_2024-10-29,Last Resort,NF,Last Resort (NF),2024-10-29,2024,40,0,0,FALSE
+Libby's Lair_2013-11-02,Libby's Lair,NS,Libby's Lair (NS),2013-11-02,2013,30,1,0.03333333333333333,FALSE
+Libby's Lair_2014-11-07,Libby's Lair,NS,Libby's Lair (NS),2014-11-07,2014,34,2,0.058823529411764705,FALSE
+Libby's Lair_2015-11-24,Libby's Lair,NS,Libby's Lair (NS),2015-11-24,2015,32,0,0,FALSE
+Libby's Lair_2016-09-18,Libby's Lair,NS,Libby's Lair (NS),2016-09-18,2016,36,0,0,FALSE
+Libby's Lair_2017-10-29,Libby's Lair,NS,Libby's Lair (NS),2017-10-29,2017,46,1,0.021739130434782608,FALSE
+Libby's Lair_2018-11-10,Libby's Lair,NS,Libby's Lair (NS),2018-11-10,2018,72,0,0,FALSE
+Libby's Lair_2019-10-26,Libby's Lair,NS,Libby's Lair (NS),2019-10-26,2019,36,2,0.05555555555555555,FALSE
+Libby's Lair_2021-11-06,Libby's Lair,NS,Libby's Lair (NS),2021-11-06,2021,34,1,0.029411764705882353,FALSE
+Libby's Lair_2022-11-04,Libby's Lair,NS,Libby's Lair (NS),2022-11-04,2022,76,6,0.07894736842105263,FALSE
+Libby's Lair_2022-11-05,Libby's Lair,NS,Libby's Lair (NS),2022-11-05,2022,26,1,0.038461538461538464,FALSE
+Libby's Lair_2023-10-01,Libby's Lair,NS,Libby's Lair (NS),2023-10-01,2023,34,2,0.058823529411764705,FALSE
+Libby's Lair_2023-10-27,Libby's Lair,NS,Libby's Lair (NS),2023-10-27,2023,80,2,0.025,FALSE
+Libby's Lair_2024-11-04,Libby's Lair,NS,Libby's Lair (NS),2024-11-04,2024,80,0,0,FALSE
+Research Zone_2013-10-18,Research Zone,SF,Research Zone (SF),2013-10-18,2013,70,13,0.18571428571428572,FALSE
+Research Zone_2013-11-02,Research Zone,SF,Research Zone (SF),2013-11-02,2013,80,0,0,FALSE
+Research Zone_2014-10-02,Research Zone,SF,Research Zone (SF),2014-10-02,2014,100,10,0.1,FALSE
+Research Zone_2014-10-04,Research Zone,SF,Research Zone (SF),2014-10-04,2014,24,1,0.041666666666666664,FALSE
+Research Zone_2015-11-23,Research Zone,SF,Research Zone (SF),2015-11-23,2015,38,2,0.05263157894736842,FALSE
+Research Zone_2016-09-17,Research Zone,SF,Research Zone (SF),2016-09-17,2016,40,0,0,FALSE
+Research Zone_2016-10-11,Research Zone,SF,Research Zone (SF),2016-10-11,2016,62,4,0.06451612903225806,FALSE
+Research Zone_2017-11-30,Research Zone,SF,Research Zone (SF),2017-11-30,2017,80,9,0.1125,FALSE
+Research Zone_2019-10-26,Research Zone,SF,Research Zone (SF),2019-10-26,2019,38,1,0.02631578947368421,FALSE
+Research Zone_2019-11-25,Research Zone,SF,Research Zone (SF),2019-11-25,2019,44,1,0.022727272727272728,FALSE
+Research Zone_2020-09-17,Research Zone,SF,Research Zone (SF),2020-09-17,2020,308,14,0.045454545454545456,FALSE
+Research Zone_2020-09-18,Research Zone,SF,Research Zone (SF),2020-09-18,2020,374,42,0.11229946524064172,FALSE
+Research Zone_2020-09-19,Research Zone,SF,Research Zone (SF),2020-09-19,2020,52,2,0.038461538461538464,FALSE
+Research Zone_2021-10-28,Research Zone,SF,Research Zone (SF),2021-10-28,2021,32,4,0.125,FALSE
+Research Zone_2021-10-29,Research Zone,SF,Research Zone (SF),2021-10-29,2021,104,1,0.009615384615384616,FALSE
+Research Zone_2021-10-31,Research Zone,SF,Research Zone (SF),2021-10-31,2021,38,0,0,FALSE
+Research Zone_2021-11-04,Research Zone,SF,Research Zone (SF),2021-11-04,2021,642,10,0.01557632398753894,FALSE
+Research Zone_2021-11-06,Research Zone,SF,Research Zone (SF),2021-11-06,2021,28,0,0,FALSE
+Research Zone_2022-09-05,Research Zone,SF,Research Zone (SF),2022-09-05,2022,146,10,0.0684931506849315,FALSE
+Research Zone_2022-11-06,Research Zone,SF,Research Zone (SF),2022-11-06,2022,36,0,0,FALSE
+Research Zone_2022-11-26,Research Zone,SF,Research Zone (SF),2022-11-26,2022,36,9,0.25,TRUE
+Research Zone_2023-09-12,Research Zone,SF,Research Zone (SF),2023-09-12,2023,292,39,0.13356164383561644,FALSE
+Research Zone_2023-09-29,Research Zone,SF,Research Zone (SF),2023-09-29,2023,78,2,0.02564102564102564,FALSE
+Research Zone_2023-10-31,Research Zone,SF,Research Zone (SF),2023-10-31,2023,34,3,0.08823529411764706,FALSE
+Research Zone_2023-11-08,Research Zone,SF,Research Zone (SF),2023-11-08,2023,500,14,0.028,FALSE
+Research Zone_2024-10-08,Research Zone,SF,Research Zone (SF),2024-10-08,2024,40,2,0.05,FALSE
+Research Zone_2024-10-11,Research Zone,SF,Research Zone (SF),2024-10-11,2024,40,1,0.025,FALSE
+Research Zone_2024-10-24,Research Zone,SF,Research Zone (SF),2024-10-24,2024,104,1,0.009615384615384616,FALSE
+Research Zone_2024-10-30,Research Zone,SF,Research Zone (SF),2024-10-30,2024,40,1,0.025,FALSE
+Research Zone_2024-11-03,Research Zone,SF,Research Zone (SF),2024-11-03,2024,120,1,0.008333333333333333,FALSE
+Shark Bay_2014-11-08,Shark Bay,SF,Shark Bay (SF),2014-11-08,2014,102,7,0.06862745098039216,FALSE
+Shark Bay_2016-09-18,Shark Bay,SF,Shark Bay (SF),2016-09-18,2016,40,0,0,FALSE
+Shark Bay_2018-10-05,Shark Bay,SF,Shark Bay (SF),2018-10-05,2018,38,11,0.2894736842105263,TRUE
+Shark Bay_2019-10-25,Shark Bay,SF,Shark Bay (SF),2019-10-25,2019,40,1,0.025,FALSE
+Shark Bay_2021-11-05,Shark Bay,SF,Shark Bay (SF),2021-11-05,2021,40,0,0,FALSE
+Shark Bay_2021-11-07,Shark Bay,SF,Shark Bay (SF),2021-11-07,2021,40,0,0,FALSE
+Shark Bay_2022-11-05,Shark Bay,SF,Shark Bay (SF),2022-11-05,2022,40,0,0,FALSE
+Shark Bay_2023-10-01,Shark Bay,SF,Shark Bay (SF),2023-10-01,2023,78,0,0,FALSE
+Shark Bay_2023-10-30,Shark Bay,SF,Shark Bay (SF),2023-10-30,2023,34,0,0,FALSE
+Shark Bay_2024-10-26,Shark Bay,SF,Shark Bay (SF),2024-10-26,2024,114,2,0.017543859649122806,FALSE
+Shark Bay_2024-11-02,Shark Bay,SF,Shark Bay (SF),2024-11-02,2024,40,0,0,FALSE
+White Wedding_2014-11-12,White Wedding,NF,White Wedding (NF),2014-11-12,2014,40,2,0.05,FALSE
+White Wedding_2015-11-25,White Wedding,NF,White Wedding (NF),2015-11-25,2015,38,5,0.13157894736842105,FALSE
+White Wedding_2016-09-19,White Wedding,NF,White Wedding (NF),2016-09-19,2016,78,2,0.02564102564102564,FALSE
+White Wedding_2017-10-31,White Wedding,NF,White Wedding (NF),2017-10-31,2017,40,3,0.075,FALSE
+White Wedding_2018-11-13,White Wedding,NF,White Wedding (NF),2018-11-13,2018,40,0,0,FALSE
+White Wedding_2019-10-27,White Wedding,NF,White Wedding (NF),2019-10-27,2019,38,1,0.02631578947368421,FALSE
+White Wedding_2020-11-17,White Wedding,NF,White Wedding (NF),2020-11-17,2020,38,2,0.05263157894736842,FALSE
+White Wedding_2022-11-27,White Wedding,NF,White Wedding (NF),2022-11-27,2022,40,2,0.05,FALSE
+White Wedding_2023-09-30,White Wedding,NF,White Wedding (NF),2023-09-30,2023,76,0,0,FALSE
+White Wedding_2024-10-28,White Wedding,NF,White Wedding (NF),2024-10-28,2024,40,0,0,FALSE

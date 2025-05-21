@@ -1,0 +1,129 @@
+year_season,season,year,SITE,site_type,SITE_label,n_surveys,n_observations,n_bleached_obs,prop_bleach_obs
+2013_Spring,Spring,2013,Cappuccino,NF,Cappuccino (NF),1,40,0,0
+2014_Spring,Spring,2014,Cappuccino,NF,Cappuccino (NF),1,80,9,0.1125
+2015_Spring,Spring,2015,Cappuccino,NF,Cappuccino (NF),1,40,4,0.1
+2016_Spring,Spring,2016,Cappuccino,NF,Cappuccino (NF),1,80,3,0.0375
+2017_Spring,Spring,2017,Cappuccino,NF,Cappuccino (NF),1,40,1,0.025
+2018_Spring,Spring,2018,Cappuccino,NF,Cappuccino (NF),2,80,3,0.0375
+2020_Spring,Spring,2020,Cappuccino,NF,Cappuccino (NF),1,40,4,0.1
+2021_Spring,Spring,2021,Cappuccino,NF,Cappuccino (NF),1,38,0,0
+2022_Spring,Spring,2022,Cappuccino,NF,Cappuccino (NF),1,38,0,0
+2023_Spring,Spring,2023,Cappuccino,NF,Cappuccino (NF),1,120,8,0.06666666666666667
+2024_Spring,Spring,2024,Cappuccino,NF,Cappuccino (NF),1,114,7,0.06140350877192982
+2014_Spring,Spring,2014,Last Resort,NF,Last Resort (NF),1,80,5,0.0625
+2016_Spring,Spring,2016,Last Resort,NF,Last Resort (NF),1,24,1,0.041666666666666664
+2023_Spring,Spring,2023,Last Resort,NF,Last Resort (NF),1,80,0,0
+2024_Spring,Spring,2024,Last Resort,NF,Last Resort (NF),1,40,0,0
+2014_Spring,Spring,2014,White Wedding,NF,White Wedding (NF),1,40,2,0.05
+2015_Spring,Spring,2015,White Wedding,NF,White Wedding (NF),1,38,5,0.13157894736842105
+2016_Spring,Spring,2016,White Wedding,NF,White Wedding (NF),1,78,2,0.02564102564102564
+2017_Spring,Spring,2017,White Wedding,NF,White Wedding (NF),1,40,3,0.075
+2018_Spring,Spring,2018,White Wedding,NF,White Wedding (NF),1,40,0,0
+2019_Spring,Spring,2019,White Wedding,NF,White Wedding (NF),1,38,1,0.02631578947368421
+2020_Spring,Spring,2020,White Wedding,NF,White Wedding (NF),1,38,2,0.05263157894736842
+2022_Spring,Spring,2022,White Wedding,NF,White Wedding (NF),1,40,2,0.05
+2023_Spring,Spring,2023,White Wedding,NF,White Wedding (NF),1,76,0,0
+2024_Spring,Spring,2024,White Wedding,NF,White Wedding (NF),1,40,0,0
+2014_Spring,Spring,2014,Jetty Flat,SF,Jetty Flat (SF),1,70,4,0.05714285714285714
+2015_Spring,Spring,2015,Jetty Flat,SF,Jetty Flat (SF),1,40,3,0.075
+2016_Spring,Spring,2016,Jetty Flat,SF,Jetty Flat (SF),1,38,6,0.15789473684210525
+2017_Spring,Spring,2017,Jetty Flat,SF,Jetty Flat (SF),1,40,8,0.2
+2021_Spring,Spring,2021,Jetty Flat,SF,Jetty Flat (SF),1,30,1,0.03333333333333333
+2022_Spring,Spring,2022,Jetty Flat,SF,Jetty Flat (SF),1,34,0,0
+2023_Spring,Spring,2023,Jetty Flat,SF,Jetty Flat (SF),1,36,0,0
+2024_Spring,Spring,2024,Jetty Flat,SF,Jetty Flat (SF),1,110,2,0.01818181818181818
+2013_Spring,Spring,2013,Research Zone,SF,Research Zone (SF),2,150,13,0.08666666666666667
+2014_Spring,Spring,2014,Research Zone,SF,Research Zone (SF),2,124,11,0.08870967741935484
+2015_Spring,Spring,2015,Research Zone,SF,Research Zone (SF),1,38,2,0.05263157894736842
+2016_Spring,Spring,2016,Research Zone,SF,Research Zone (SF),2,102,4,0.0392156862745098
+2017_Spring,Spring,2017,Research Zone,SF,Research Zone (SF),1,80,9,0.1125
+2019_Spring,Spring,2019,Research Zone,SF,Research Zone (SF),2,82,2,0.024390243902439025
+2020_Spring,Spring,2020,Research Zone,SF,Research Zone (SF),3,734,58,0.07901907356948229
+2021_Spring,Spring,2021,Research Zone,SF,Research Zone (SF),5,844,15,0.017772511848341232
+2022_Spring,Spring,2022,Research Zone,SF,Research Zone (SF),3,218,19,0.0871559633027523
+2023_Spring,Spring,2023,Research Zone,SF,Research Zone (SF),4,904,58,0.06415929203539823
+2024_Autumn,Autumn,2024,Research Zone,SF,Research Zone (SF),1,22,0,0
+2024_Spring,Spring,2024,Research Zone,SF,Research Zone (SF),5,344,6,0.01744186046511628
+2014_Spring,Spring,2014,Shark Bay,SF,Shark Bay (SF),1,102,7,0.06862745098039216
+2016_Spring,Spring,2016,Shark Bay,SF,Shark Bay (SF),1,40,0,0
+2018_Spring,Spring,2018,Shark Bay,SF,Shark Bay (SF),1,38,11,0.2894736842105263
+2019_Spring,Spring,2019,Shark Bay,SF,Shark Bay (SF),1,40,1,0.025
+2021_Spring,Spring,2021,Shark Bay,SF,Shark Bay (SF),2,80,0,0
+2022_Spring,Spring,2022,Shark Bay,SF,Shark Bay (SF),1,40,0,0
+2023_Spring,Spring,2023,Shark Bay,SF,Shark Bay (SF),2,112,0,0
+2024_Autumn,Autumn,2024,Shark Bay,SF,Shark Bay (SF),1,40,16,0.4
+2024_Spring,Spring,2024,Shark Bay,SF,Shark Bay (SF),2,154,2,0.012987012987012988
+2014_Spring,Spring,2014,Coral Cascade,NS,Coral Cascade (NS),1,40,0,0
+2015_Spring,Spring,2015,Coral Cascade,NS,Coral Cascade (NS),1,36,0,0
+2017_Spring,Spring,2017,Coral Cascade,NS,Coral Cascade (NS),1,44,1,0.022727272727272728
+2018_Spring,Spring,2018,Coral Cascade,NS,Coral Cascade (NS),1,36,0,0
+2021_Spring,Spring,2021,Coral Cascade,NS,Coral Cascade (NS),2,150,1,0.006666666666666667
+2022_Spring,Spring,2022,Coral Cascade,NS,Coral Cascade (NS),1,40,0,0
+2023_Spring,Spring,2023,Coral Cascade,NS,Coral Cascade (NS),2,112,1,0.008928571428571428
+2024_Autumn,Autumn,2024,Coral Cascade,NS,Coral Cascade (NS),1,40,14,0.35
+2024_Spring,Spring,2024,Coral Cascade,NS,Coral Cascade (NS),2,80,3,0.0375
+2014_Spring,Spring,2014,Coral Grotto,NS,Coral Grotto (NS),1,38,3,0.07894736842105263
+2015_Spring,Spring,2015,Coral Grotto,NS,Coral Grotto (NS),1,38,1,0.02631578947368421
+2017_Spring,Spring,2017,Coral Grotto,NS,Coral Grotto (NS),2,76,0,0
+2018_Spring,Spring,2018,Coral Grotto,NS,Coral Grotto (NS),1,40,0,0
+2019_Spring,Spring,2019,Coral Grotto,NS,Coral Grotto (NS),1,36,0,0
+2021_Spring,Spring,2021,Coral Grotto,NS,Coral Grotto (NS),1,36,0,0
+2022_Spring,Spring,2022,Coral Grotto,NS,Coral Grotto (NS),1,94,8,0.0851063829787234
+2023_Spring,Spring,2023,Coral Grotto,NS,Coral Grotto (NS),2,68,2,0.029411764705882353
+2024_Autumn,Autumn,2024,Coral Grotto,NS,Coral Grotto (NS),1,36,15,0.4166666666666667
+2024_Spring,Spring,2024,Coral Grotto,NS,Coral Grotto (NS),2,112,7,0.0625
+2013_Spring,Spring,2013,Libby's Lair,NS,Libby's Lair (NS),1,30,1,0.03333333333333333
+2014_Spring,Spring,2014,Libby's Lair,NS,Libby's Lair (NS),1,34,2,0.058823529411764705
+2015_Spring,Spring,2015,Libby's Lair,NS,Libby's Lair (NS),1,32,0,0
+2016_Spring,Spring,2016,Libby's Lair,NS,Libby's Lair (NS),1,36,0,0
+2017_Spring,Spring,2017,Libby's Lair,NS,Libby's Lair (NS),1,46,1,0.021739130434782608
+2018_Spring,Spring,2018,Libby's Lair,NS,Libby's Lair (NS),1,72,0,0
+2019_Spring,Spring,2019,Libby's Lair,NS,Libby's Lair (NS),1,36,2,0.05555555555555555
+2021_Spring,Spring,2021,Libby's Lair,NS,Libby's Lair (NS),1,34,1,0.029411764705882353
+2022_Spring,Spring,2022,Libby's Lair,NS,Libby's Lair (NS),2,102,7,0.06862745098039216
+2023_Spring,Spring,2023,Libby's Lair,NS,Libby's Lair (NS),2,114,4,0.03508771929824561
+2024_Autumn,Autumn,2024,Libby's Lair,NS,Libby's Lair (NS),1,38,14,0.3684210526315789
+2024_Spring,Spring,2024,Libby's Lair,NS,Libby's Lair (NS),1,80,0,0
+2013_Spring,Spring,2013,Canyons,SS,Canyons (SS),1,36,2,0.05555555555555555
+2014_Spring,Spring,2014,Canyons,SS,Canyons (SS),1,38,10,0.2631578947368421
+2015_Spring,Spring,2015,Canyons,SS,Canyons (SS),1,40,0,0
+2016_Spring,Spring,2016,Canyons,SS,Canyons (SS),1,38,1,0.02631578947368421
+2017_Spring,Spring,2017,Canyons,SS,Canyons (SS),2,86,4,0.046511627906976744
+2018_Spring,Spring,2018,Canyons,SS,Canyons (SS),1,40,0,0
+2019_Spring,Spring,2019,Canyons,SS,Canyons (SS),1,40,0,0
+2020_Spring,Spring,2020,Canyons,SS,Canyons (SS),2,346,15,0.04335260115606936
+2021_Spring,Spring,2021,Canyons,SS,Canyons (SS),2,248,5,0.020161290322580645
+2022_Spring,Spring,2022,Canyons,SS,Canyons (SS),2,110,1,0.00909090909090909
+2023_Spring,Spring,2023,Canyons,SS,Canyons (SS),2,112,1,0.008928571428571428
+2024_Autumn,Autumn,2024,Canyons,SS,Canyons (SS),1,40,13,0.325
+2024_Spring,Spring,2024,Canyons,SS,Canyons (SS),2,120,2,0.016666666666666666
+2015_Spring,Spring,2015,Half Way,SS,Half Way (SS),1,34,0,0
+2016_Spring,Spring,2016,Half Way,SS,Half Way (SS),1,30,0,0
+2017_Spring,Spring,2017,Half Way,SS,Half Way (SS),1,32,0,0
+2018_Spring,Spring,2018,Half Way,SS,Half Way (SS),1,28,0,0
+2019_Spring,Spring,2019,Half Way,SS,Half Way (SS),1,72,1,0.013888888888888888
+2021_Spring,Spring,2021,Half Way,SS,Half Way (SS),1,38,0,0
+2022_Spring,Spring,2022,Half Way,SS,Half Way (SS),2,78,0,0
+2023_Spring,Spring,2023,Half Way,SS,Half Way (SS),2,70,1,0.014285714285714285
+2024_Autumn,Autumn,2024,Half Way,SS,Half Way (SS),1,24,9,0.375
+2024_Spring,Spring,2024,Half Way,SS,Half Way (SS),2,132,6,0.045454545454545456
+2014_Spring,Spring,2014,Harry's Bommie,SS,Harry's Bommie (SS),1,30,0,0
+2015_Spring,Spring,2015,Harry's Bommie,SS,Harry's Bommie (SS),1,34,3,0.08823529411764706
+2016_Spring,Spring,2016,Harry's Bommie,SS,Harry's Bommie (SS),1,40,0,0
+2017_Spring,Spring,2017,Harry's Bommie,SS,Harry's Bommie (SS),1,38,0,0
+2018_Spring,Spring,2018,Harry's Bommie,SS,Harry's Bommie (SS),1,36,3,0.08333333333333333
+2019_Spring,Spring,2019,Harry's Bommie,SS,Harry's Bommie (SS),1,40,1,0.025
+2021_Spring,Spring,2021,Harry's Bommie,SS,Harry's Bommie (SS),1,34,0,0
+2022_Spring,Spring,2022,Harry's Bommie,SS,Harry's Bommie (SS),1,60,0,0
+2023_Spring,Spring,2023,Harry's Bommie,SS,Harry's Bommie (SS),2,112,1,0.008928571428571428
+2024_Autumn,Autumn,2024,Harry's Bommie,SS,Harry's Bommie (SS),1,38,14,0.3684210526315789
+2024_Spring,Spring,2024,Harry's Bommie,SS,Harry's Bommie (SS),3,216,8,0.037037037037037035
+2014_Spring,Spring,2014,Heron Bommie,SS,Heron Bommie (SS),1,34,1,0.029411764705882353
+2016_Spring,Spring,2016,Heron Bommie,SS,Heron Bommie (SS),1,38,0,0
+2017_Spring,Spring,2017,Heron Bommie,SS,Heron Bommie (SS),1,36,1,0.027777777777777776
+2018_Spring,Spring,2018,Heron Bommie,SS,Heron Bommie (SS),1,30,5,0.16666666666666666
+2019_Spring,Spring,2019,Heron Bommie,SS,Heron Bommie (SS),1,36,0,0
+2022_Spring,Spring,2022,Heron Bommie,SS,Heron Bommie (SS),2,106,5,0.04716981132075472
+2023_Spring,Spring,2023,Heron Bommie,SS,Heron Bommie (SS),2,66,2,0.030303030303030304
+2024_Autumn,Autumn,2024,Heron Bommie,SS,Heron Bommie (SS),2,386,81,0.20984455958549222
+2024_Spring,Spring,2024,Heron Bommie,SS,Heron Bommie (SS),2,114,7,0.06140350877192982

@@ -1,0 +1,120 @@
+SITE,SITE_label,site_type,year,n_bleached_obs,n_observations,prop_bleach_obs
+Canyons,Canyons (SS),SS,2013,2,36,0.05555555555555555
+Canyons,Canyons (SS),SS,2014,10,38,0.2631578947368421
+Canyons,Canyons (SS),SS,2015,0,40,0
+Canyons,Canyons (SS),SS,2016,1,38,0.02631578947368421
+Canyons,Canyons (SS),SS,2017,4,86,0.046511627906976744
+Canyons,Canyons (SS),SS,2018,0,40,0
+Canyons,Canyons (SS),SS,2019,0,40,0
+Canyons,Canyons (SS),SS,2020,15,346,0.04335260115606936
+Canyons,Canyons (SS),SS,2021,5,248,0.020161290322580645
+Canyons,Canyons (SS),SS,2022,1,110,0.00909090909090909
+Canyons,Canyons (SS),SS,2023,1,112,0.008928571428571428
+Canyons,Canyons (SS),SS,2024,15,160,0.09375
+Cappuccino,Cappuccino (NF),NF,2013,0,40,0
+Cappuccino,Cappuccino (NF),NF,2014,9,80,0.1125
+Cappuccino,Cappuccino (NF),NF,2015,4,40,0.1
+Cappuccino,Cappuccino (NF),NF,2016,3,80,0.0375
+Cappuccino,Cappuccino (NF),NF,2017,1,40,0.025
+Cappuccino,Cappuccino (NF),NF,2018,3,80,0.0375
+Cappuccino,Cappuccino (NF),NF,2020,4,40,0.1
+Cappuccino,Cappuccino (NF),NF,2021,0,38,0
+Cappuccino,Cappuccino (NF),NF,2022,0,38,0
+Cappuccino,Cappuccino (NF),NF,2023,8,120,0.06666666666666667
+Cappuccino,Cappuccino (NF),NF,2024,7,114,0.06140350877192982
+Coral Cascade,Coral Cascade (NS),NS,2014,0,40,0
+Coral Cascade,Coral Cascade (NS),NS,2015,0,36,0
+Coral Cascade,Coral Cascade (NS),NS,2017,1,44,0.022727272727272728
+Coral Cascade,Coral Cascade (NS),NS,2018,0,36,0
+Coral Cascade,Coral Cascade (NS),NS,2021,1,150,0.006666666666666667
+Coral Cascade,Coral Cascade (NS),NS,2022,0,40,0
+Coral Cascade,Coral Cascade (NS),NS,2023,1,112,0.008928571428571428
+Coral Cascade,Coral Cascade (NS),NS,2024,17,120,0.14166666666666666
+Coral Grotto,Coral Grotto (NS),NS,2014,3,38,0.07894736842105263
+Coral Grotto,Coral Grotto (NS),NS,2015,1,38,0.02631578947368421
+Coral Grotto,Coral Grotto (NS),NS,2017,0,76,0
+Coral Grotto,Coral Grotto (NS),NS,2018,0,40,0
+Coral Grotto,Coral Grotto (NS),NS,2019,0,36,0
+Coral Grotto,Coral Grotto (NS),NS,2021,0,36,0
+Coral Grotto,Coral Grotto (NS),NS,2022,8,94,0.0851063829787234
+Coral Grotto,Coral Grotto (NS),NS,2023,2,68,0.029411764705882353
+Coral Grotto,Coral Grotto (NS),NS,2024,22,148,0.14864864864864866
+Half Way,Half Way (SS),SS,2015,0,34,0
+Half Way,Half Way (SS),SS,2016,0,30,0
+Half Way,Half Way (SS),SS,2017,0,32,0
+Half Way,Half Way (SS),SS,2018,0,28,0
+Half Way,Half Way (SS),SS,2019,1,72,0.013888888888888888
+Half Way,Half Way (SS),SS,2021,0,38,0
+Half Way,Half Way (SS),SS,2022,0,78,0
+Half Way,Half Way (SS),SS,2023,1,70,0.014285714285714285
+Half Way,Half Way (SS),SS,2024,15,156,0.09615384615384616
+Harry's Bommie,Harry's Bommie (SS),SS,2014,0,30,0
+Harry's Bommie,Harry's Bommie (SS),SS,2015,3,34,0.08823529411764706
+Harry's Bommie,Harry's Bommie (SS),SS,2016,0,40,0
+Harry's Bommie,Harry's Bommie (SS),SS,2017,0,38,0
+Harry's Bommie,Harry's Bommie (SS),SS,2018,3,36,0.08333333333333333
+Harry's Bommie,Harry's Bommie (SS),SS,2019,1,40,0.025
+Harry's Bommie,Harry's Bommie (SS),SS,2021,0,34,0
+Harry's Bommie,Harry's Bommie (SS),SS,2022,0,60,0
+Harry's Bommie,Harry's Bommie (SS),SS,2023,1,112,0.008928571428571428
+Harry's Bommie,Harry's Bommie (SS),SS,2024,22,254,0.08661417322834646
+Heron Bommie,Heron Bommie (SS),SS,2014,1,34,0.029411764705882353
+Heron Bommie,Heron Bommie (SS),SS,2016,0,38,0
+Heron Bommie,Heron Bommie (SS),SS,2017,1,36,0.027777777777777776
+Heron Bommie,Heron Bommie (SS),SS,2018,5,30,0.16666666666666666
+Heron Bommie,Heron Bommie (SS),SS,2019,0,36,0
+Heron Bommie,Heron Bommie (SS),SS,2022,5,106,0.04716981132075472
+Heron Bommie,Heron Bommie (SS),SS,2023,2,66,0.030303030303030304
+Heron Bommie,Heron Bommie (SS),SS,2024,88,500,0.176
+Jetty Flat,Jetty Flat (SF),SF,2014,4,70,0.05714285714285714
+Jetty Flat,Jetty Flat (SF),SF,2015,3,40,0.075
+Jetty Flat,Jetty Flat (SF),SF,2016,6,38,0.15789473684210525
+Jetty Flat,Jetty Flat (SF),SF,2017,8,40,0.2
+Jetty Flat,Jetty Flat (SF),SF,2021,1,30,0.03333333333333333
+Jetty Flat,Jetty Flat (SF),SF,2022,0,34,0
+Jetty Flat,Jetty Flat (SF),SF,2023,0,36,0
+Jetty Flat,Jetty Flat (SF),SF,2024,2,110,0.01818181818181818
+Last Resort,Last Resort (NF),NF,2014,5,80,0.0625
+Last Resort,Last Resort (NF),NF,2016,1,24,0.041666666666666664
+Last Resort,Last Resort (NF),NF,2023,0,80,0
+Last Resort,Last Resort (NF),NF,2024,0,40,0
+Libby's Lair,Libby's Lair (NS),NS,2013,1,30,0.03333333333333333
+Libby's Lair,Libby's Lair (NS),NS,2014,2,34,0.058823529411764705
+Libby's Lair,Libby's Lair (NS),NS,2015,0,32,0
+Libby's Lair,Libby's Lair (NS),NS,2016,0,36,0
+Libby's Lair,Libby's Lair (NS),NS,2017,1,46,0.021739130434782608
+Libby's Lair,Libby's Lair (NS),NS,2018,0,72,0
+Libby's Lair,Libby's Lair (NS),NS,2019,2,36,0.05555555555555555
+Libby's Lair,Libby's Lair (NS),NS,2021,1,34,0.029411764705882353
+Libby's Lair,Libby's Lair (NS),NS,2022,7,102,0.06862745098039216
+Libby's Lair,Libby's Lair (NS),NS,2023,4,114,0.03508771929824561
+Libby's Lair,Libby's Lair (NS),NS,2024,14,118,0.11864406779661017
+Research Zone,Research Zone (SF),SF,2013,13,150,0.08666666666666667
+Research Zone,Research Zone (SF),SF,2014,11,124,0.08870967741935484
+Research Zone,Research Zone (SF),SF,2015,2,38,0.05263157894736842
+Research Zone,Research Zone (SF),SF,2016,4,102,0.0392156862745098
+Research Zone,Research Zone (SF),SF,2017,9,80,0.1125
+Research Zone,Research Zone (SF),SF,2019,2,82,0.024390243902439025
+Research Zone,Research Zone (SF),SF,2020,58,734,0.07901907356948229
+Research Zone,Research Zone (SF),SF,2021,15,844,0.017772511848341232
+Research Zone,Research Zone (SF),SF,2022,19,218,0.0871559633027523
+Research Zone,Research Zone (SF),SF,2023,58,904,0.06415929203539823
+Research Zone,Research Zone (SF),SF,2024,6,366,0.01639344262295082
+Shark Bay,Shark Bay (SF),SF,2014,7,102,0.06862745098039216
+Shark Bay,Shark Bay (SF),SF,2016,0,40,0
+Shark Bay,Shark Bay (SF),SF,2018,11,38,0.2894736842105263
+Shark Bay,Shark Bay (SF),SF,2019,1,40,0.025
+Shark Bay,Shark Bay (SF),SF,2021,0,80,0
+Shark Bay,Shark Bay (SF),SF,2022,0,40,0
+Shark Bay,Shark Bay (SF),SF,2023,0,112,0
+Shark Bay,Shark Bay (SF),SF,2024,18,194,0.09278350515463918
+White Wedding,White Wedding (NF),NF,2014,2,40,0.05
+White Wedding,White Wedding (NF),NF,2015,5,38,0.13157894736842105
+White Wedding,White Wedding (NF),NF,2016,2,78,0.02564102564102564
+White Wedding,White Wedding (NF),NF,2017,3,40,0.075
+White Wedding,White Wedding (NF),NF,2018,0,40,0
+White Wedding,White Wedding (NF),NF,2019,1,38,0.02631578947368421
+White Wedding,White Wedding (NF),NF,2020,2,38,0.05263157894736842
+White Wedding,White Wedding (NF),NF,2022,2,40,0.05
+White Wedding,White Wedding (NF),NF,2023,0,76,0
+White Wedding,White Wedding (NF),NF,2024,0,40,0
