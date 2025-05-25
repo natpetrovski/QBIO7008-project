@@ -1,6 +1,14 @@
 # QBIO7008 Research Project
 
-This repository contains code and data for my QBIO7008 research project titled: Do different citizen science programs provide consistent measures of coral bleaching, and how do their methodologies compare?
+This repository contains code and data for my QBIO7008 research project titled: 
+**Do different citizen science programs provide consistent measures of coral bleaching, and how do their methodologies compare?**
+
+## Author
+
+Natalie Petrovski  
+QBIO7008 – Research Project
+Master of Quantitative Biology
+The University of Queensland
 
 ## Project Summary
 
@@ -21,9 +29,4 @@ This project compares coral bleaching detection methods using citizen science da
 
 To reproduce this analysis, ensure all `.csv` files are in the same folder as the R scripts and run them in order. You can open `.R` files in RStudio or another R environment.
 
-## Author
 
-Natalie Petrovski  
-QBIO7008 – Research Project
-Master of Quantitative Biology
-The University of Queensland
