@@ -6,9 +6,7 @@ This repository contains code and data for my QBIO7008 research project titled:
 ## Author
 
 Natalie Petrovski  
-QBIO7008 – Research Project
-Master of Quantitative Biology
-The University of Queensland
+QBIO7008 – Research Project <br> Master of Quantitative Biology <br> The University of Queensland
 
 ## Project Summary
 
@@ -27,6 +25,6 @@ This project compares coral bleaching detection methods using citizen science da
 
 ## How to Use
 
-To reproduce this analysis, ensure all `.csv` files are in the same folder as the R scripts and run them in order. You can open `.R` files in RStudio or another R environment.
+To reproduce this analysis, ensure the two dataset `.csv` files are in the same folder as the R scripts and run them in order.
 
 
