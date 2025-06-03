@@ -233,7 +233,9 @@ CW_bleach_s_y <- CW_bleach_s %>%
     n_surveys = n_distinct(survey_id, na.rm = TRUE),
     n_observations = sum(observations),
     n_bleached_obs = sum(n_bleach),
-    prop_bleach_obs = n_bleached_obs / n_observations) %>%
+    prop_bleach_obs = n_bleached_obs / n_observations,
+    n_surveys_bleached = sum(bleached),
+    threshold_survey = n_surveys_bleached > 0) %>%
   mutate(year = as.numeric(as.character(year)))
 
 ##Group RF and RS sites
@@ -267,7 +269,9 @@ CW_bleach_a_y <- CW_bleach_a %>%
     n_surveys = n_distinct(survey_id, na.rm = TRUE),
     n_observations = sum(observations),
     n_bleached_obs = sum(n_bleach),
-    prop_bleach_obs = n_bleached_obs / n_observations)
+    prop_bleach_obs = n_bleached_obs / n_observations,
+    n_surveys_bleached = sum(bleached),
+    threshold_survey = n_surveys_bleached > 0)
 
 ##Group RF and RS sites
 CW_bleach_a_y <- CW_bleach_a_y %>%

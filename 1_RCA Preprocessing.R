@@ -262,9 +262,20 @@ mean_sub_props <- RC_substrate_long_grouped %>%
             sd = sd(Proportion * 100, na.rm = TRUE),
             .groups = "drop")
 
-##Calculate average healthy coral cover and min max
+##Calculate average healthy coral cover and min max by site
 hc_summary <- RC_HC_bleach %>%
   group_by(SITE_label) %>%
+  filter(substrate_group == "HC") %>%
+  summarise(
+    mean = mean(Proportion *100, na.rm = TRUE),
+    sd = sd(Proportion *100, na.rm = TRUE),
+    min = min(Proportion *100, na.rm = TRUE),
+    max = max(Proportion *100, na.rm = TRUE),
+    .groups = "drop")
+
+##Calculate average healthy coral cover and min max by year
+hc_year_summary <- RC_HC_bleach %>%
+  group_by(year) %>%
   filter(substrate_group == "HC") %>%
   summarise(
     mean = mean(Proportion *100, na.rm = TRUE),
@@ -284,11 +295,32 @@ hcb_summary <- RC_HC_bleach %>%
     max = max(prop_bleached *100, na.rm = TRUE),
     .groups = "drop")  
 
+###Site level bleaching per year
+hcb_site_year <- RC_HC_bleach %>%
+  filter(substrate_group == "HCB") %>%
+  group_by(SITE_label, year) %>%
+  summarise(
+    prop_bleach = mean(prop_bleached, na.rm = TRUE),
+    .groups = "drop")
+
+##Then aggregate sites to get average bleach over time (based on sites)
+hcb_site_year_means <- hcb_site_year %>%
+  group_by(year) %>%
+  summarise(
+    mean_bleach = mean(prop_bleach, na.rm = TRUE) *100,
+    sd_bleach = sd(prop_bleach, na.rm = TRUE)*100)
+
 ##Get >20% bleaching events
 hcb_detect <- RC_bleach %>%
   group_by(site_type, SITE_label, year) %>%
   reframe(percentage_bleached = prop_bleached *100) %>%
   mutate(RC_bleach_detected = ifelse(percentage_bleached >= 20, "Yes", "No"))
+
+##Calculate mean bleaching proportions by year only
+hcb_year_means <- RC_bleach_counts %>%
+  group_by(year) %>%
+  summarise(prop_bleach = sum(n_bleach) / sum(total_coral) *100,
+            sd_bleach = sd(n_bleach) / sum(total_coral) *100)
 
 ##summary stats on data used for analyses - number of sites, surveys and observations
 RC_summary <- RC_bleach_counts %>%

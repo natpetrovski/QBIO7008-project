@@ -99,15 +99,15 @@ hist(CW_bleach_s_y$prop_bleach_obs)
 hist(CW_bleach_a_y$prop_bleach_obs)
 
 # #sort by site type for plotting
-# CW_bleach_s_y <- CW_bleach_s_y %>%
-#   mutate(site_type = factor(site_type, levels = c("NF", "SF", "NS", "SS"))) %>%
-#   arrange(site_type, SITE) %>%
-#   mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
+CW_bleach_s_y <- CW_bleach_s_y %>%
+  mutate(site_type = factor(site_type, levels = c("NF", "SF", "NS", "SS"))) %>%
+  arrange(site_type, SITE) %>%
+  mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
 
-# CW_bleach_a_y <- CW_bleach_a_y %>%
-#   mutate(site_type = factor(site_type, levels = c("NF", "SF", "NS", "SS"))) %>%
-#   arrange(site_type, SITE) %>%
-#   mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
+CW_bleach_a_y <- CW_bleach_a_y %>%
+  mutate(site_type = factor(site_type, levels = c("NF", "SF", "NS", "SS"))) %>%
+  arrange(site_type, SITE) %>%
+  mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
 
 #####PLOT: bleaching proportions per survey grouped by year
 ##Option 1: Spring only surveys
@@ -179,6 +179,7 @@ p8 <- ggplot(CW_bleach_s_y, aes(x = factor(year), y = prop_bleach_obs, group = S
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ggsave(path = "figs", filename = "CW_bleach_s_SITE.jpeg", p8, width = 11, height = 7, dpi = 300)
 
+##Option 2: spring + autumn 2024
 p9 <- ggplot(CW_bleach_a_y, aes(x = factor(year_season), y = prop_bleach_obs, group = SITE_label, color = SITE_label)) +
   geom_line() +
   geom_point() +
@@ -209,6 +210,15 @@ p11 <- ggplot(CW_bleach_a_y, aes(x = year_season, y = (SITE_label), fill = prop_
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
   scale_y_discrete(limits=rev)
 ggsave(path = "figs", filename = "CW_heatmap_A.jpeg", p11, width = 11, height = 7, dpi = 300)
+
+###PLOT: Spread of proportions across sites (which fluctuated the most)
+p_site_spread <- ggplot(CW_bleach_s_y, aes(x = SITE_label, y = prop_bleach_obs)) +
+  geom_boxplot(outlier.shape = NA, ) +
+  geom_jitter(aes(color = factor(year)), width = 0.2, size = 2, alpha = 0.8) +
+  labs(x = "Site", y = "Proportion Bleached", color = "Year") +
+  theme_minimal(base_size = 14) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggsave(path = "figs", filename = "CW_site_spread_S.jpeg", p_site_spread, width = 11, height = 7, dpi = 300)
 
 ##############################################################################
 #SECTION 3: GENERALIZED LINEAR MIXED MODEL

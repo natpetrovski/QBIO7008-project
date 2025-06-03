@@ -1,4 +1,4 @@
-#####CoralWatch and RCA Comparsion visualisations and statistics###
+#####CoralWatch and RCA Comparison visualisations and statistics###
 #author: Natalie Petrovski
 #date: May 2025
 
@@ -7,6 +7,7 @@ library(ggplot2)
 library(tidyverse)
 library(here)
 
+##Load in data
 RC_HC_bleach_dummy <- read_csv(here("output_data/RC_HC_bleach_dummy.csv"))
 CW_bleach_merge <- read_csv(here("output_data/CW_bleach_merge.csv"))
 
@@ -55,9 +56,15 @@ bleach_comparison_long <- bleach_comparison_long %>%
   arrange(site_type, SITE_label) %>%
   mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
 
+##export as csv
+write_csv(bleach_comparison_long, file = here::here("output_data", "bleach_comparison_long.csv"))
+
 ##############################################################################
 #STEP 2: Plot CoralWatch and RCA bleaching data
 ##############################################################################
+##Load in data if already exported csv files from step 1
+bleach_comparison <- read_csv(here("output_data/bleach_comparison.csv"))
+bleach_comparison_long <- read_csv(here("output_data/bleach_comparison_long.csv"))
 
 ####PLOT: Line plot bleaching proportions
 p19 <- ggplot(bleach_comparison_long, aes(x = factor(year), y = bleach_prop, color = method)) +
@@ -75,16 +82,16 @@ ggsave(path = "figs", filename = "RCA_CW_bleaching_comparison.jpeg", p19, width 
 p20 <- ggplot(bleach_comparison, aes(x = year)) +
   geom_line(aes(y = rc_bleach, color = "RCA bleaching")) +
   geom_point(aes(y = rc_bleach, color = "RCA bleaching")) +
-  geom_line(aes(y = cw_bleach, color = "CW bleaching")) +
-  geom_point(aes(y = cw_bleach, color = "CW bleaching")) +
+  geom_line(aes(y = cw_bleach, color = "CoralWatch bleaching")) +
+  geom_point(aes(y = cw_bleach, color = "CoralWatch bleaching")) +
   facet_wrap(~ SITE_label) +
-  scale_color_manual(values = c("RCA bleaching" = "skyblue", "CW bleaching" = "lightcoral")) +
+  scale_color_manual(values = c("RCA bleaching" = "skyblue", "CoralWatch bleaching" = "lightcoral")) +
   labs(color = "", x = "Year") +
   scale_x_continuous(breaks = seq(2013, 2024, by = 1)) +
   scale_y_continuous(
     name = "Proportion Bleached Corals") +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1), legend.position = "bottom")
+  theme(axis.text.x = element_text(angle = 45, hjust = 1), legend.position = "bottom", legend.text=element_text(size=14))
 ggsave(path = "figs", filename = "RCA_CW_bleaching_comparison2.jpeg", p20, width = 13, height = 9, dpi = 300)
 
 #####PLOT: Coral cover + bleached with actual proportions
@@ -150,6 +157,7 @@ p23 <- ggplot(bleach_bar_long, aes(x = year)) +
   scale_fill_manual(values = c("RCA Bleaching" = "skyblue", "CW Bleaching" = "lightcoral")) +
   labs(y = "Proportion of Total Substrate", x = "Year", color = "", fill = "") +
   scale_x_continuous(breaks = seq(2013, 2024, by = 1)) +
+  scale_y_continuous(breaks = seq(0, 1, by = 0.2)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),
         legend.position = "bottom")
@@ -194,7 +202,7 @@ bleach_table_df <- as.data.frame.matrix(bleach_table)
 #export as csv
 write.csv(bleach_table_df, "output_data/comp_bleach_table.csv", row.names = FALSE)
 
-#####PLOT: Comparison plot
+#####PLOT: Comparison plot with scale
 bleach_comp_plot <- as.data.frame(bleach_table) %>%
   ggplot(aes(x = CW, y = RC, fill = Freq)) +
   geom_tile() +
@@ -207,12 +215,24 @@ bleach_comp_plot <- as.data.frame(bleach_table) %>%
   theme_minimal(base_size = 14)
 ggsave(path = "figs", filename = "bleach_comp_plot.jpeg", bleach_comp_plot, width = 13, height = 9, dpi = 300)
 
+###PLOT: comparison plot without scale
+bleach_comp_plot <- as.data.frame(bleach_table) %>%
+  ggplot(aes(x = CW, y = RC)) +
+  geom_tile(fill = "white", color = "black") +
+  geom_text(aes(label = Freq), color = "black", size = 8) +
+  labs(
+    x = "CW Bleaching Detected",
+    y = "RCA Bleaching Detected") +
+  theme_minimal(base_size = 16)
+ggsave(path = "figs", filename = "bleach_comp_plot2.jpeg", bleach_comp_plot, width = 13, height = 9, dpi = 300)
+
 ##show which sites/years bleaching is detected
 bleach_list <- bleach_comparison %>%
-  select(SITE, year, CW_bleach_detected, RCA_bleach_detected) %>%
+  select(SITE, year, CW_bleach_detected, RCA_bleach_detected,cw_bleach, rc_bleach) %>%
   filter(CW_bleach_detected == "Yes" |
          RCA_bleach_detected =="Yes")
-  
+write.csv(bleach_list, "output_data/comp_bleach_list.csv", row.names = FALSE)
+
 ##############################################################################
 #STEP 4: Merge prediction plots from GLMMs to plot
 ##############################################################################
