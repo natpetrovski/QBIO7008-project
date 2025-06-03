@@ -1,7 +1,7 @@
 # QBIO7008 Research Project
 
-This repository contains code and data for my QBIO7008 research project titled: 
-**Do different citizen science programs provide consistent measures of coral bleaching, and how do their methodologies compare?**
+This repository contains code and data for my QBIO7008 research project titled:
+**A comparison of citizen science annual monitoring of coral bleaching, 2013 – 2024, Heron Reef, Great Barrier Reef**
 
 ## Author
 
@@ -21,7 +21,7 @@ This project compares coral bleaching detection methods using citizen science da
 - `3_Comparison script.R` – Comparison plots and analyses between CoralWatch and RCA data
 - `RC_substrate_cleaned.csv` - Reef Check Australia cleaned dataset
 - `coral-watch-heron-cleaned.csv` - CoralWatch cleaned dataset
-- `output_data/` – Cleaned datasets and exported statistics/summaries/analyses
+- `output_data/` – Restructured/filtered datasets and exported statistics/summaries/analyses
 
 ## How to Use
 
