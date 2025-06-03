@@ -16,8 +16,8 @@ This project compares coral bleaching detection methods using citizen science da
 
 - `1_CoralWatch Preprocessing.R` – Data cleaning and preparation for CoralWatch data
 - `1_RCA Preprocessing.R` – Data cleaning and preparation for Reef Check Australia data
-- `2_Visualisation CoralWatch.R` – CoralWatch plots and analyses
-- `2_Visualisation RCA.R` – Reef Check Australia plots and analyses
+- `2_CoralWatch visualisations and analysis.R` – CoralWatch plots and analyses
+- `2_RCA visualisations and analysis.R` – Reef Check Australia plots and analyses
 - `3_Comparison script.R` – Comparison plots and analyses between CoralWatch and RCA data
 - `RC_substrate_cleaned.csv` - Reef Check Australia cleaned dataset
 - `coral-watch-heron-cleaned.csv` - CoralWatch cleaned dataset
