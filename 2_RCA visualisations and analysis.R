@@ -30,11 +30,11 @@ substrate_colours_2 <- c(
   "HC" = "darkorange",
   "HCB" = "orangered")
 
-# ##sort by site_type if needed for plotting
-# RC_substrate_long_grouped <- RC_substrate_long_grouped %>%
-#   mutate(site_type = factor(site_type, levels = c("NF", "SF", "NS", "SS"))) %>%
-#   arrange(site_type, SITE) %>%
-#   mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
+##sort by site_type if needed for plotting
+RC_substrate_long_grouped <- RC_substrate_long_grouped %>%
+  mutate(site_type = factor(site_type, levels = c("NF", "SF", "NS", "SS"))) %>%
+  arrange(site_type, SITE) %>%
+  mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
 
 #####PLOT: Bar plot with substrate proportions
 p12 <- ggplot(RC_substrate_long_grouped, aes(x = factor(year), y = Proportion, fill = substrate_group)) +
@@ -84,6 +84,20 @@ p14 <- RC_substrate_long_grouped %>%
     legend.text = element_text(size = 10),
     panel.spacing = unit(1, "lines"))
 ggsave(path = "figs", filename = "RCA_HCBonly_prop_site.jpeg", p14, width = 11, height = 7, dpi = 300)
+
+####PLOT: box plot - proportion of HCB by year for each site
+p_rca_site_spread <- RC_substrate_long_grouped %>%
+  filter(substrate_group == "HCB") %>%
+  ggplot(aes(x = SITE_label, y = Proportion)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(aes(color = factor(year)), width = 0.2, size = 2, alpha = 0.8) +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+  labs(x = "Site", y = "Proportion Bleached (HCB)", color = "Year") +
+  theme_minimal(base_size = 14) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.position = "right")
+ggsave(path = "figs", filename = "RC_site_spread.jpeg", p_rca_site_spread, width = 11, height = 7, dpi = 300)
 
 ##############################################################################
 #SECTION 2: VISUALISATIONS OF RCA BLEACHED PROPORTIONS
