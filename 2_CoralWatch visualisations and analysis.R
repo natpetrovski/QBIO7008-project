@@ -207,7 +207,12 @@ p11 <- ggplot(CW_bleach_a_y, aes(x = year_season, y = (SITE_label), fill = prop_
   scale_fill_gradient(low = "#FFFFCC", high = "#E31A1C", na.value = "grey90") +
   labs(x = "Year", y = "Site", fill = "Prop. Bleached") +
   theme_minimal(base_size = 14) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 15),
+        legend.text = element_text(size = 18),
+        legend.title = element_text(size = 16),
+        axis.text.y = element_text(size = 15),
+        axis.title.x = element_text(size = 18),
+        axis.title.y = element_text(size = 18)) +
   scale_y_discrete(limits=rev)
 ggsave(path = "figs", filename = "CW_heatmap_A.jpeg", p11, width = 11, height = 7, dpi = 300)
 

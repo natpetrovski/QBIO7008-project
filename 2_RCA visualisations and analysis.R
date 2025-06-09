@@ -45,8 +45,14 @@ p12 <- ggplot(RC_substrate_long_grouped, aes(x = factor(year), y = Proportion, f
   labs(y = "Proportion",
        x = "Year") +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
-ggsave(path = "figs", filename = "RCA_substr_prop_site.jpeg", p12, width = 11, height = 7, dpi = 300)
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 15),
+        axis.text.y = element_text(size = 18),
+        axis.title.x = element_text(size = 20),
+        axis.title.y = element_text(size = 20),
+        strip.text = element_text(size = 16),
+        legend.text = element_text(size = 20),
+        legend.title = element_text(size = 18))
+ggsave(path = "figs", filename = "RCA_substr_prop_site.jpeg", p12, width = 14, height = 7, dpi = 300)
 
 ###PLOT: Bar plot with HC and HCB proportions only
 p13 <- RC_substrate_long_grouped %>%
@@ -59,7 +65,13 @@ p13 <- RC_substrate_long_grouped %>%
   labs(y = "Proportion",
        x = "Year")  +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 15),
+        axis.text.y = element_text(size = 18),
+        axis.title.x = element_text(size = 20),
+        axis.title.y = element_text(size = 20),
+        strip.text = element_text(size = 16),
+        legend.text = element_text(size = 20),
+        legend.title = element_text(size = 18))
 ggsave(path = "figs", filename = "RCA_HC_prop_site.jpeg", p13, width = 11, height = 7, dpi = 300)
 
 
@@ -147,15 +159,35 @@ p16 <- ggplot(RC_bleach, aes(x = year, y = prop_bleached)) +
 ggsave(path = "figs", filename = "RCA_bleaching_proportions_site.jpeg", p16, width = 12, height = 7, dpi = 300)
 
 #####PLOT: Barplot HCB proportion out of HC
-p17 <- RC_HC_bleach %>%
-  ggplot(aes(x = factor(year), y = prop_bleached, fill = substrate_group)) +
+hcb_prop_hc <- RC_HC_bleach %>%
+  filter(substrate_group == "HCB") %>%
+  select(SITE_label, site_type, SITE, year, prop_bleached) %>%
+  mutate(
+    HCB = prop_bleached,
+    HC = 1 - prop_bleached
+  ) %>%
+  pivot_longer(cols = c(HCB, HC),
+               names_to = "Substrate_group",
+               values_to = "Proportion") %>%
+  mutate(site_type = factor(site_type, levels = c("NF", "SF", "NS", "SS"))) %>%
+  arrange(site_type, SITE) %>%
+  mutate(SITE_label = factor(SITE_label, levels = unique(SITE_label)))
+
+p17 <- hcb_prop_hc %>%
+  ggplot(aes(x = factor(year), y = Proportion, fill = Substrate_group)) +
   geom_col(position = "stack") +
   facet_wrap(~ SITE_label) +
   scale_fill_manual(values = substrate_colours_2) +
   scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
   labs(y = "Proportion", x = "Year")  +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 14),
+        axis.text.y = element_text(size = 18),
+        axis.title.x = element_text(size = 20),
+        axis.title.y = element_text(size = 20),
+        strip.text = element_text(size = 16),
+        legend.text = element_text(size = 18),
+        legend.title = element_text(size = 16))
 ggsave(path = "figs", filename = "RCA_bleach_bar.jpeg", p17, width = 12, height = 7, dpi = 300)
 
 #####PLOT: HC and HCB proportions as line plot but with points

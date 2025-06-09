@@ -91,8 +91,12 @@ p20 <- ggplot(bleach_comparison, aes(x = year)) +
   scale_y_continuous(
     name = "Proportion Bleached Corals") +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1), legend.position = "bottom", legend.text=element_text(size=14))
-ggsave(path = "figs", filename = "RCA_CW_bleaching_comparison2.jpeg", p20, width = 13, height = 9, dpi = 300)
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 15), legend.position = "bottom", legend.text=element_text(size=16),
+        strip.text = element_text(size=16),
+        axis.text.y = element_text(size = 16),
+        axis.title.x = element_text(size = 18),
+        axis.title.y = element_text(size = 18))
+ggsave(path = "figs", filename = "RCA_CW_bleaching_comparison21.jpeg", p20, width = 13, height = 9, dpi = 300)
 
 #####PLOT: Coral cover + bleached with actual proportions
 p21 <- ggplot(bleach_comparison, aes(x = year)) +
@@ -159,7 +163,12 @@ p23 <- ggplot(bleach_bar_long, aes(x = year)) +
   scale_x_continuous(breaks = seq(2013, 2024, by = 1)) +
   scale_y_continuous(breaks = seq(0, 1, by = 0.2)) +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 16),
+        legend.text=element_text(size=16),
+        strip.text = element_text(size=16),
+        axis.text.y = element_text(size = 16),
+        axis.title.x = element_text(size = 18),
+        axis.title.y = element_text(size = 18),
         legend.position = "bottom")
 ggsave(path = "figs", filename = "RCA_CW_bleach_CoralCover_Bars.jpeg", p23, width = 13, height = 9, dpi = 300)
 
@@ -223,7 +232,11 @@ bleach_comp_plot <- as.data.frame(bleach_table) %>%
   labs(
     x = "CW Bleaching Detected",
     y = "RCA Bleaching Detected") +
-  theme_minimal(base_size = 16)
+  theme_minimal() +
+  theme(axis.text.y = element_text(size = 18),
+                axis.title.x = element_text(size = 20),
+                axis.title.y = element_text(size = 20),
+                axis.text.x = element_text(size = 18))
 ggsave(path = "figs", filename = "bleach_comp_plot2.jpeg", bleach_comp_plot, width = 13, height = 9, dpi = 300)
 
 ##show which sites/years bleaching is detected
@@ -281,7 +294,12 @@ pred_plot_merged <- ggplot(all_pred_bleach, aes(x = x, y = predicted, color = so
     fill = "95% CI") +
   theme_minimal() +
   scale_x_continuous(breaks = 2013:2024) +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 18),
+        axis.text.y =element_text(size = 18),
+        axis.title.x = element_text(size = 20),
+        axis.title.y = element_text(size = 20),
+        legend.text=element_text(size=16),
+        legend.title = element_text(size = 16))
 ggsave(path = "figs", filename = "model_predictions_merged.jpeg", pred_plot_merged, width = 11, height = 7, dpi = 300)
 
 
